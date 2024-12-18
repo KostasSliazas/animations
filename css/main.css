@@ -230,7 +230,6 @@ a {
   color: var(--theme-text-color);
   transition: color 0.3s ease;
   text-underline-offset: 2px;
-  line-height: 1;
 }
 
 /* Hover effect */

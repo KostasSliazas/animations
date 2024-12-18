@@ -248,13 +248,18 @@ img {
   transition: transform 0.1s ease-in-out;
 }
 a {
-  color: var(--theme-text-color); /* Apply text color from variable */
-  transition: color 0.3s ease; /* Smooth hover transition */
+  font-variant: initial;
+  text-transform: lowercase;
+  text-decoration: underline;
+  color: var(--theme-text-color);
+  transition: color 0.3s ease;
+  text-underline-offset: 2px;
+  line-height: 1;
 }
 
 /* Hover effect */
 a:hover {
-  text-decoration: none; /* Remove underline */
+  text-underline-offset: initial;
   background-color: var(--theme-base-color); /* Change background on hover */
 }
 .hidden {

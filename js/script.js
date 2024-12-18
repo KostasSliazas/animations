@@ -129,6 +129,6 @@
     setTimeout(function () {
       // Hide the loader
       d.getElementById('loader').classList.add('hidden');
-    }, 1000);
+    }, 250);
   };
 })(window, document);

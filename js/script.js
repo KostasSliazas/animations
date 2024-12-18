@@ -124,4 +124,11 @@
   }
 
   d.addEventListener('DOMContentLoaded', init);
+  // Wait for the page to load fully
+  w.onload = function () {
+    setTimeout(function () {
+      // Hide the loader
+      d.getElementById('loader').classList.add('hidden');
+    }, 1000);
+  };
 })(window, document);

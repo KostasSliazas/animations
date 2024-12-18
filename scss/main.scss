@@ -87,6 +87,7 @@ html {
   text-rendering: optimizeLegibility;
   scroll-behavior: smooth;
   scroll-padding-top: 1.5em;
+  background: #777;
 }
 
 #wrapper,
@@ -255,6 +256,33 @@ a {
 a:hover {
   text-decoration: none; /* Remove underline */
   background-color: var(--theme-base-color); /* Change background on hover */
+}
+.hidden {
+  display: none;
+}
+#loader:not(.hidden) ~ * {
+  display: none;
+}
+#loader::before {
+  display: block;
+  content: '';
+  height: 24px;
+  width: 24px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow:
+    13px 0 0 -11px currentColor,
+    -13px 0 0 -11px currentColor,
+    0 -13px 0 -11px currentColor,
+    0 13px 0 -11px currentColor,
+    10px 9px 0 -11px currentColor,
+    10px -9px 0 -11px currentColor,
+    -10px -9px 0 -11px currentColor,
+    -10px 9px 0 -11px currentColor;
+  border-radius: 50%;
+  animation: rotate2 1s linear infinite;
 }
 
 #logo {

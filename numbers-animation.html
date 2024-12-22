@@ -60,7 +60,64 @@
           <div class="block">
             <h2>CSS</h2>
             <div class="box code">
-              <pre>.digit {
+              <pre>
+@keyframes top {
+  0%, 10%, 20%, 30%, 40%, 60%, 70%, 90% {
+    background: var(--theme-text-color);
+  }
+  50%, 80% {
+    background: rgba(0, 0, 0, 0.1);
+  }
+}
+@keyframes topleft {
+  0%, 10%, 30%, 40%, 50%, 90% {
+    background: var(--theme-text-color);
+  }
+  20%, 60%, 70%, 80% {
+    background: rgba(0, 0, 0, 0.1);
+  }
+}
+@keyframes topright {
+  0%, 10%, 20%, 50%, 60%, 70%, 80%, 90% {
+    background: var(--theme-text-color);
+  }
+  30%, 40% {
+    background: rgba(0, 0, 0, 0.1);
+  }
+}
+@keyframes center {
+  0%, 10%, 30%, 40%, 50%, 60%, 70% {
+    background: var(--theme-text-color);
+  }
+  20%, 80%, 90% {
+    background: rgba(0, 0, 0, 0.1);
+  }
+}
+@keyframes centerleft {
+  0%, 20%, 40%, 50%, 60%, 80% {
+    background: rgba(0, 0, 0, 0.1);
+  }
+  10%, 30%, 70%, 90% {
+    background: var(--theme-text-color);
+  }
+}
+@keyframes centerright {
+  0%, 10%, 20%, 30%, 40%, 50%, 60%, 80%, 90% {
+    background: var(--theme-text-color);
+  }
+  70% {
+    background: rgba(0, 0, 0, 0.1);
+  }
+}
+@keyframes bottom {
+  0%, 10%, 30%, 40%, 60%, 70%, 90% {
+    background: var(--theme-text-color);
+  }
+  20%, 50%, 80% {
+    background: rgba(0, 0, 0, 0.1);
+  }
+}
+.digit {
   width: 48px;
   height: 48px;
   top: 50%;
@@ -98,7 +155,7 @@
   height: 400%;
   width: 20%;
   position: absolute;
-  content: '';
+  content: &quot;&quot;;
   border-radius: 30%;
   margin-top: 15%;
 }
@@ -116,7 +173,7 @@
 }
 
 .digit:before {
-  content: '';
+  content: &quot;&quot;;
   width: 50%;
   height: 10%;
   border-radius: 30%;
@@ -164,17 +221,10 @@
   animation-name: centerright;
 }
 
-.text {
-  color: transparent;
-}
-
 .digit div:nth-child(3) {
-  text-align: center;
   position: relative;
   top: 90%;
-  font-family: 'Courier New', Courier, monospace;
-  font-weight: 700;
-  animation: digitColor 1s steps(2) forwards alternate;
+  font-size: 10px;
 }
 </pre>
             </div>

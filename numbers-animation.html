@@ -48,71 +48,133 @@
           <div class="block">
             <h2>HTML</h2>
             <div class="box code">
-              <pre>&lt;div class=&quot;loader loader--3d&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;</pre>
+              <pre>
+              &lt;div class=&quot;digit&quot;&gt;
+                &lt;div&gt;&lt;/div&gt;
+                &lt;div&gt;&lt;/div&gt;
+                &lt;div class=&quot;text&quot;&gt;Loading...&lt;/div&gt;
+              &lt;/div&gt;
+              </pre>
             </div>
           </div>
           <div class="block">
             <h2>CSS</h2>
             <div class="box code">
-              <pre>@keyframes rotate1 {
-    to {
-        transform: translate(-50%,-50%) rotateY(360deg)
-    }
+              <pre>.digit {
+  width: 48px;
+  height: 48px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-@keyframes rotate2 {
-    to {
-        transform: translate(-50%,-50%) rotateZ(360deg)
-    }
+.animation .digit {
+  animation: inherit;
+  animation-duration: 10s;
+  animation-timing-function: steps(1);
 }
 
-.loader,.loader:after,.loader:before {
-    position: absolute;
-    border-radius: 50%;
-    transform: translate(-50%,-50%)
+.digit,
+.digit:before {
+  position: absolute;
+  bottom: 0;
+  display: block;
 }
 
-.loader {
-    box-sizing: border-box;
-    display: block;
-    top: 50%;
-    left: 50%;
-    height: 60px;
-    width: 60px;
-    border-width: 20px 0;
-    perspective: 90px
+.digit div:nth-child(1),
+.digit div:nth-child(2) {
+  display: block;
+  height: 10%;
+  width: 50%;
+  position: relative;
+  border-radius: 30%;
+  margin: 0 auto;
 }
 
-.loader:after,.loader:before {
-    content: &quot;&quot;
+.digit div:nth-child(1)::after,
+.digit div:nth-child(1)::before,
+.digit div:nth-child(2)::after,
+.digit div:nth-child(2)::before {
+  height: 400%;
+  width: 20%;
+  position: absolute;
+  content: '';
+  border-radius: 30%;
+  margin-top: 15%;
 }
 
-.loader,.loader:before {
-    border: 20px solid var(--theme-text-color)
+.digit div:nth-child(1)::before,
+.digit div:nth-child(2)::before {
+  left: 0;
+  margin-left: -15%;
 }
 
-.loader:before {
-    top: 10px;
-    left: 10px;
-    width: 48px;
-    height: 24px;
-    border-width: 0 20px
+.digit div:nth-child(1)::after,
+.digit div:nth-child(2)::after {
+  right: 0;
+  margin-right: -15%;
 }
 
-.loader:after {
-    top: 10px;
-    left: 10px;
-    height: 80px;
-    width: 80px;
-    border: 10px solid var(--theme-text-color)
+.digit:before {
+  content: '';
+  width: 50%;
+  height: 10%;
+  border-radius: 30%;
+  margin: 0 0 0 25%;
+  animation-name: bottom;
+  animation-duration: inherit;
+  animation-timing-function: inherit;
 }
 
-.animation .loader:after {
-    animation: rotate1 1s linear infinite
+.digit div:nth-child(1),
+.digit div:nth-child(1)::after,
+.digit div:nth-child(1)::before,
+.digit div:nth-child(2),
+.digit div:nth-child(2)::after,
+.digit div:nth-child(2)::before {
+  animation-name: top;
+  animation-duration: inherit;
+  animation-timing-function: inherit;
 }
 
-.animation .loader:before {
-    animation: rotate2 .2s linear infinite
+.digit div:nth-child(2) {
+  top: 35%;
+  animation-name: center;
+}
+
+.digit div:nth-child(1)::after,
+.digit div:nth-child(1)::before,
+.digit div:nth-child(2)::after,
+.digit div:nth-child(2)::before {
+  animation-name: topleft;
+}
+
+.digit div:nth-child(1)::after,
+.digit div:nth-child(2)::after,
+.digit div:nth-child(2)::before {
+  animation-name: topright;
+}
+
+.digit div:nth-child(2)::after,
+.digit div:nth-child(2)::before {
+  animation-name: centerleft;
+}
+
+.digit div:nth-child(2)::after {
+  animation-name: centerright;
+}
+
+.text {
+  color: transparent;
+}
+
+.digit div:nth-child(3) {
+  text-align: center;
+  position: relative;
+  top: 90%;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 700;
+  animation: digitColor 1s steps(2) forwards alternate;
 }
 </pre>
             </div>

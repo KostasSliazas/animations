@@ -1779,4 +1779,170 @@ aside .box,
   font-size: 16px;
 }
 
+@keyframes top {
+  0%, 10%, 20%, 30%, 40%, 60%, 70%, 90% {
+    background: var(--theme-text-color);
+  }
+  50%, 80% {
+    background: rgba(0, 0, 0, 0.1);
+  }
+}
+@keyframes topleft {
+  0%, 10%, 30%, 40%, 50%, 90% {
+    background: var(--theme-text-color);
+  }
+  20%, 60%, 70%, 80% {
+    background: rgba(0, 0, 0, 0.1);
+  }
+}
+@keyframes topright {
+  0%, 10%, 20%, 50%, 60%, 70%, 80%, 90% {
+    background: var(--theme-text-color);
+  }
+  30%, 40% {
+    background: rgba(0, 0, 0, 0.1);
+  }
+}
+@keyframes center {
+  0%, 10%, 30%, 40%, 50%, 60%, 70% {
+    background: var(--theme-text-color);
+  }
+  20%, 80%, 90% {
+    background: rgba(0, 0, 0, 0.1);
+  }
+}
+@keyframes centerleft {
+  0%, 20%, 40%, 50%, 60%, 80% {
+    background: rgba(0, 0, 0, 0.1);
+  }
+  10%, 30%, 70%, 90% {
+    background: var(--theme-text-color);
+  }
+}
+@keyframes centerright {
+  0%, 10%, 20%, 30%, 40%, 50%, 60%, 80%, 90% {
+    background: var(--theme-text-color);
+  }
+  70% {
+    background: rgba(0, 0, 0, 0.1);
+  }
+}
+@keyframes bottom {
+  0%, 10%, 30%, 40%, 60%, 70%, 90% {
+    background: var(--theme-text-color);
+  }
+  20%, 50%, 80% {
+    background: rgba(0, 0, 0, 0.1);
+  }
+}
+.digit {
+  width: 48px;
+  height: 48px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.animation .digit {
+  animation: inherit;
+  animation-duration: 10s;
+  animation-timing-function: steps(1);
+}
+
+.digit,
+.digit:before {
+  position: absolute;
+  bottom: 0;
+  display: block;
+}
+
+.digit div:nth-child(1),
+.digit div:nth-child(2) {
+  display: block;
+  height: 10%;
+  width: 50%;
+  position: relative;
+  border-radius: 30%;
+  margin: 0 auto;
+}
+
+.digit div:nth-child(1)::after,
+.digit div:nth-child(1)::before,
+.digit div:nth-child(2)::after,
+.digit div:nth-child(2)::before {
+  height: 400%;
+  width: 20%;
+  position: absolute;
+  content: "";
+  border-radius: 30%;
+  margin-top: 15%;
+}
+
+.digit div:nth-child(1)::before,
+.digit div:nth-child(2)::before {
+  left: 0;
+  margin-left: -15%;
+}
+
+.digit div:nth-child(1)::after,
+.digit div:nth-child(2)::after {
+  right: 0;
+  margin-right: -15%;
+}
+
+.digit:before {
+  content: "";
+  width: 50%;
+  height: 10%;
+  border-radius: 30%;
+  margin: 0 0 0 25%;
+  animation-name: bottom;
+  animation-duration: inherit;
+  animation-timing-function: inherit;
+}
+
+.digit div:nth-child(1),
+.digit div:nth-child(1)::after,
+.digit div:nth-child(1)::before,
+.digit div:nth-child(2),
+.digit div:nth-child(2)::after,
+.digit div:nth-child(2)::before {
+  animation-name: top;
+  animation-duration: inherit;
+  animation-timing-function: inherit;
+}
+
+.digit div:nth-child(2) {
+  top: 35%;
+  animation-name: center;
+}
+
+.digit div:nth-child(1)::after,
+.digit div:nth-child(1)::before,
+.digit div:nth-child(2)::after,
+.digit div:nth-child(2)::before {
+  animation-name: topleft;
+}
+
+.digit div:nth-child(1)::after,
+.digit div:nth-child(2)::after,
+.digit div:nth-child(2)::before {
+  animation-name: topright;
+}
+
+.digit div:nth-child(2)::after,
+.digit div:nth-child(2)::before {
+  animation-name: centerleft;
+}
+
+.digit div:nth-child(2)::after {
+  animation-name: centerright;
+}
+
+.digit div:nth-child(3) {
+  position: relative;
+  top: 90%;
+  font-size: 10px;
+}
+
 /*# sourceMappingURL=main.css.map */

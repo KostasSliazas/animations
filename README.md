@@ -16,8 +16,10 @@ Welcome to my **CSS Animation Experiments** repository! 🎨✨ This project is 
    ```bash
    cd animations
    ```
-3. **Open `index.html` in your browser** to explore the animations.
-
+3. **Open `index.html` in your browser** to explore the animations. For example:
+   ```bash
+   firefox index.html
+   ```
 ## 📋 Usage Instructions
 - **Copying Animations:** Each animation is designed as a reusable module. Copy the corresponding HTML and CSS snippets into your project.
 - **Customizing Effects:** Modify properties like `duration`, `timing-function`, and `keyframes` to create personalized effects.

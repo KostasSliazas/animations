@@ -25,7 +25,7 @@
 
         // Add an event listener to copy the content
         button.addEventListener('click', () => {
-          const content = element.textContent || element.innerText;
+          const content = (element.textContent || element.innerText).trim();
 
           navigator.clipboard
             .writeText(content)

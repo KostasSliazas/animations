@@ -661,7 +661,11 @@ aside {
     }
   }
 }
-
+@media only screen and (max-width: 480px) {
+  aside {
+    order: -1;
+  }
+}
 @media only screen and (min-width: 600px) {
   .index article {
     order: 1;
@@ -683,6 +687,7 @@ aside {
   }
 
   aside {
+    order: 0;
     width: calc(360px / 960px * 100%);
   }
 
@@ -2143,7 +2148,7 @@ $animation-duration: 1s;
   grid-template-rows: repeat(30, 3px);
   -ms-grid-columns: repeat(29, 3px);
   -ms-grid-rows: repeat(30, 3px);
-  animation: jump 0.6s steps(3, end) alternate infinite;
+  animation: jump 0.6s 34s steps(3, end) alternate infinite;
 }
 @keyframes jump {
   from {

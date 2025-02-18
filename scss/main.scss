@@ -4939,3 +4939,46 @@ $animation-duration: 1s;
   top: 0;
   box-shadow: 0 2px 2px 0 #aaa inset, 0 -2px 2px 0 #aaa inset, 0 0 1px 8px #000 inset, 0 -1px 2px 9px #aaa inset, 0 1px 5px 9px #111 inset;
 }
+
+@keyframes anims {
+  0% {
+    background: #32ff17;
+    transform: scale(1.1);
+    border: 1px solid #ffffff;
+  }
+  /* Optionally add more keyframe steps for a smoother animation */
+}
+
+.classGrid {
+  display: grid;
+  justify-content: center;
+  grid-gap: 1px;
+  grid-template-columns: repeat(21, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  > div {
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+    padding: 4px;
+    background: #111;
+    border-radius: 10%;
+    border: 1px solid #222;
+  }
+
+  // When a grid item is selected, run the animation
+  .selected {
+    animation: anims 5s linear infinite;
+  }
+}
+
+// Generate nth-child animation-delay rules using a loop
+@for $i from 1 through 148 {
+  .classGrid > div:nth-child(#{$i}) {
+    animation-delay: #{($i * 0.01s)};
+  }
+}

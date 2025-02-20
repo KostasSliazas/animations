@@ -211,7 +211,7 @@ article {
   display: block;
 }
 
-svg {
+.index svg {
   fill: none;
   stroke-width: 1;
   margin: 1em;
@@ -5491,4 +5491,52 @@ aside .box,
 
 .classGrid > div:nth-child(148) {
   animation-delay: 1.48s;
-}/*# sourceMappingURL=main.css.map */
+}
+
+@keyframes bee-rotate {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateZ(var(--rotate-angle));
+  }
+}
+@keyframes bee-move {
+  60% {
+    transform: translateX(100px);
+  }
+  80% {
+    transform: translate(100px, 30px) rotateZ(60deg);
+  }
+  90% {
+    transform: translate(120px, 100px) rotateZ(70deg);
+  }
+  to {
+    transform: translate(120px, 2000px) rotateZ(80deg);
+  }
+}
+#bee {
+  height: 48px;
+  animation: bee-move 2s forwards infinite;
+}
+
+#topleft, #topright {
+  --rotate-angle: -7deg;
+  transform-origin: bottom right;
+  animation: bee-rotate 0.2s steps(4, start) alternate infinite;
+}
+
+#topright {
+  animation-delay: 0.1s;
+}
+
+#bottomleft, #bottomright {
+  --rotate-angle: 7deg;
+  transform-origin: top right;
+  animation: bee-rotate 0.2s steps(4, start) alternate infinite;
+}
+
+#bottomright {
+  animation-delay: 0.1s;
+}
+

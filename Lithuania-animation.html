@@ -1,0 +1,781 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="CSS animations">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CSS animations</title>
+  <link rel="stylesheet" href="css/main.min.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+</head>
+
+<body>
+  <div id="loader" aria-hidden="true">Loading...</div>
+  <input type="checkbox" id="theme" aria-label="theme" title="Theme">
+  <label for="theme" id="theme-label">Theme</label>
+  <!--[if lt IE 8]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+  <div id="wrapper">
+    <a id="top"></a>
+    <header id="header">
+      <a href="/"><span>daug.eu</span><span id="logo"></span></a>
+    </header>
+    <button class="toggle-btn" id="menu">menu</button>
+    <div class="nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tetris-animation.html">tetris animation</a></li>
+        <li><a href="spining-dots-animation.html">spinning dots animation</a></li>
+        <li><a href="loader3d-animation.html">loader3d animation</a></li>
+        <li><a href="Lithuania-animation.html">Lithuania animation</a></li>
+        <li><a href="cassette-animation.html">cassette animation</a></li>
+        <li><a href="box3d-animation.html">box3d animation</a></li>
+        <li><a href="scale-animation.html">scale animation</a></li>
+        <li><a href="numbers-animation.html">numbers animation</a></li>
+        <li><a href="loader-animation.html">loader animation</a></li>
+        <li><a href="data-title-animation.html">data attribute animation</a></li>
+        <li><a href="speaker-animation.html">speaker animation</a></li>
+        <li><a href="kitty-animation.html">kitty animation</a></li>
+        <li><a href="digital-text-animation.html">digital text animation</a></li>
+        <li><a href="svg-animation.html">svg animation</a></li>
+      </ul>
+    </div>
+    <main class="container">
+      <article>
+        <h1 class="title">Lithuania map Animation</h1>
+        <div class="block">
+          <h2>HTML</h2>
+          <div class="box code">
+            <pre>&lt;div class=&quot;grid&quot;&gt;
+&lt;div class=&quot;grid__container&quot;&gt;
+&lt;div class=&quot;grid__item grid__item--1&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--2&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--3&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--4&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--5&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--6&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--7&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--8&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--9&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--10&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--11&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--12&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--13&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--14&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--15&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--16&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--17&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--18&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--19&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--20&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--21&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--22&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--23&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--24&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--25&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--26&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--27&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--28&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--29&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--30&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--31&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--32&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--33&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--34&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--35&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--36&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--37&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--38&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--39&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--40&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--41&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--42&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--43&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--44&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--45&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--46&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--47&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--48&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--49&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--50&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--51&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--52&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--53&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--54&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--55&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--56&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--57&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--58&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--59&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--60&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--61&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--62&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--63&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--64&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--65&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--66&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--67&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--68&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--69&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--70&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--71&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--72&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--73&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--74&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--75&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--76&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--77&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--78&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--79&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--80&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--81&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--82&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--83&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--84&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--85&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--86&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--87&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--88&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--89&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--90&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--91&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--92&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--93&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--94&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--95&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--96&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--97&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--98&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--99&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--100&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--101&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--102&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--103&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--104&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--105&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--106&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--107&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--108&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--109&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--110&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--111&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--112&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--113&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--114&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--115&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--116&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--117&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--118&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--119&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--120&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--121&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--122&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--123&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--124&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--125&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--126&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--127&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--128&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--129&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--130&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--131&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--132&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--133&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--134&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--135&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--136&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--137&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--138&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--139&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--140&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--141&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--142&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--143&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--144&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--145&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--146&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;grid__item grid__item--147&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</pre>
+          </div>
+        </div>
+        <div class="block">
+          <h2>CSS</h2>
+          <div class="box code">
+            <pre>@keyframes backgrnd {
+0% {
+background-color: var(--theme-bg-color)
+}
+
+to {
+background-color: var(--theme-text-color)
+}
+}
+
+.grid__item--1,.grid__item--10,.grid__item--11,.grid__item--12,.grid__item--2,.grid__item--20,.grid__item--21,.grid__item--22,.grid__item--23,.grid__item--27,.grid__item--28,.grid__item--29,.grid__item--3,.grid__item--32,.grid__item--33,.grid__item--37,.grid__item--38,.grid__item--39,.grid__item--4,.grid__item--40,.grid__item--44,.grid__item--45,.grid__item--46,.grid__item--47,.grid__item--48,.grid__item--49,.grid__item--5,.grid__item--52,.grid__item--53,.grid__item--54,.grid__item--55,.grid__item--56,.grid__item--57,.grid__item--6,.grid__item--61,.grid__item--64,.grid__item--65,.grid__item--66,.grid__item--67,.grid__item--68,.grid__item--69,.grid__item--70,.grid__item--72,.grid__item--73,.grid__item--74,.grid__item--75,.grid__item--76,.grid__item--77,.grid__item--78,.grid__item--79,.grid__item--8,.grid__item--80,.grid__item--81,.grid__item--82,.grid__item--83,.grid__item--84,.grid__item--85,.grid__item--86,.grid__item--87,.grid__item--9 {
+background: 0 0!important
+}
+
+.grid__item--101,.grid__item--113,.grid__item--125,.grid__item--126,.grid__item--127 {
+background: #c1272d!important
+}
+
+.grid__item--104,.grid__item--105,.grid__item--106,.grid__item--117,.grid__item--129 {
+background: #006a44!important
+}
+
+.grid__item--108,.grid__item--110,.grid__item--120,.grid__item--122,.grid__item--132,.grid__item--133,.grid__item--134 {
+background: #fdb913!important
+}
+
+.grid__item--7 {
+grid-area: 1/6/3/8
+}
+
+.grid__item--13 {
+grid-area: 2/2/4/4
+}
+
+.grid__item--14 {
+grid-area: 2/4/4/6
+}
+
+.grid__item--15 {
+grid-area: 4/1/6/3
+}
+
+.grid__item--16 {
+grid-area: 4/3/6/5
+}
+
+.grid__item--17 {
+grid-area: 3/6/5/8
+}
+
+.grid__item--18 {
+grid-area: 4/8/6/10
+}
+
+.grid__item--35 {
+grid-area: 5/6/7/8
+}
+
+.grid__item--42 {
+grid-area: 6/4/8/6
+}
+
+.grid__item--63 {
+grid-area: 8/6/10/8
+}
+
+.grid__item--43 {
+grid-area: 6/8/8/10
+}
+
+.grid__container {
+width: 288px;
+height: 288px;
+display: -ms-grid;
+display: grid;
+gap: 2px;
+-ms-grid-columns: 1fr 2px 1fr 2px 1fr 2px 1fr 2px 1fr 2px 1fr 2px 1fr 2px 1fr 2px 1fr 2px 1fr 2px 1fr 2px 1fr;
+grid-template-columns: repeat(12,1fr);
+margin: auto;
+position: relative
+}
+
+.grid__container&gt;div {
+text-align: center;
+padding: 6px;
+background: var(--theme-base-color)
+}
+
+.animation .grid__item {
+animation-name: backgrnd;
+animation-timing-function: linear;
+animation-duration: .2s;
+animation-iteration-count: infinite;
+animation-fill-mode: both
+}
+
+.grid__item--1 {
+animation-delay: .87824s
+}
+
+.grid__item--2 {
+animation-delay: .75531s
+}
+
+.grid__item--3 {
+animation-delay: 1.5979s
+}
+
+.grid__item--4 {
+animation-delay: 1.31908s
+}
+
+.grid__item--5 {
+animation-delay: .22719s
+}
+
+.grid__item--6 {
+animation-delay: .7209s
+}
+
+.grid__item--7 {
+animation-delay: .97757s
+}
+
+.grid__item--8 {
+animation-delay: .4763s
+}
+
+.grid__item--9 {
+animation-delay: 1.80788s
+}
+
+.grid__item--10 {
+animation-delay: .25576s
+}
+
+.grid__item--11 {
+animation-delay: .24704s
+}
+
+.grid__item--12 {
+animation-delay: .08126s
+}
+
+.grid__item--13 {
+animation-delay: 1.69465s
+}
+
+.grid__item--14 {
+animation-delay: .30881s
+}
+
+.grid__item--15 {
+animation-delay: .9629s
+}
+
+.grid__item--16 {
+animation-delay: 1.44257s
+}
+
+.grid__item--17 {
+animation-delay: 1.04025s
+}
+
+.grid__item--18 {
+animation-delay: 1.94551s
+}
+
+.grid__item--19 {
+animation-delay: 1.13061s
+}
+
+.grid__item--20 {
+animation-delay: .98286s
+}
+
+.grid__item--21 {
+animation-delay: .76797s
+}
+
+.grid__item--22 {
+animation-delay: .14232s
+}
+
+.grid__item--23 {
+animation-delay: .20886s
+}
+
+.grid__item--24 {
+animation-delay: 1.13692s
+}
+
+.grid__item--25 {
+animation-delay: .95285s
+}
+
+.grid__item--26 {
+animation-delay: .70947s
+}
+
+.grid__item--27 {
+animation-delay: 1.85978s
+}
+
+.grid__item--28 {
+animation-delay: 1.63992s
+}
+
+.grid__item--29 {
+animation-delay: .12338s
+}
+
+.grid__item--30 {
+animation-delay: 1.8663s
+}
+
+.grid__item--31 {
+animation-delay: .46966s
+}
+
+.grid__item--32 {
+animation-delay: .18117s
+}
+
+.grid__item--33 {
+animation-delay: .51579s
+}
+
+.grid__item--34 {
+animation-delay: 1.65212s
+}
+
+.grid__item--35 {
+animation-delay: 1.10714s
+}
+
+.grid__item--36 {
+animation-delay: .33938s
+}
+
+.grid__item--37 {
+animation-delay: .65796s
+}
+
+.grid__item--38 {
+animation-delay: .6947s
+}
+
+.grid__item--39 {
+animation-delay: .62089s
+}
+
+.grid__item--40 {
+animation-delay: 1.7828s
+}
+
+.grid__item--41 {
+animation-delay: 1.07843s
+}
+
+.grid__item--42 {
+animation-delay: 1.37329s
+}
+
+.grid__item--43 {
+animation-delay: .82313s
+}
+
+.grid__item--44 {
+animation-delay: 1.40656s
+}
+
+.grid__item--45 {
+animation-delay: 1.23803s
+}
+
+.grid__item--46 {
+animation-delay: 1.71629s
+}
+
+.grid__item--47 {
+animation-delay: 1.73738s
+}
+
+.grid__item--48 {
+animation-delay: .56049s
+}
+
+.grid__item--49 {
+animation-delay: 1.60641s
+}
+
+.grid__item--50 {
+animation-delay: .04854s
+}
+
+.grid__item--51 {
+animation-delay: 1.91673s
+}
+
+.grid__item--52 {
+animation-delay: .01372s
+}
+
+.grid__item--53 {
+animation-delay: .70596s
+}
+
+.grid__item--54 {
+animation-delay: 1.75374s
+}
+
+.grid__item--55 {
+animation-delay: 1.37276s
+}
+
+.grid__item--56 {
+animation-delay: 1.40142s
+}
+
+.grid__item--57 {
+animation-delay: 1.73849s
+}
+
+.grid__item--58 {
+animation-delay: .60495s
+}
+
+.grid__item--59 {
+animation-delay: .57671s
+}
+
+.grid__item--60 {
+animation-delay: 1.04777s
+}
+
+.grid__item--61 {
+animation-delay: 1.15014s
+}
+
+.grid__item--62 {
+animation-delay: .19938s
+}
+
+.grid__item--63 {
+animation-delay: 1.73777s
+}
+
+.grid__item--64 {
+animation-delay: .49918s
+}
+
+.grid__item--65 {
+animation-delay: .25605s
+}
+
+.grid__item--66 {
+animation-delay: .74035s
+}
+
+.grid__item--67 {
+animation-delay: .06796s
+}
+
+.grid__item--68 {
+animation-delay: .5305s
+}
+
+.grid__item--69 {
+animation-delay: 1.76944s
+}
+
+.grid__item--70 {
+animation-delay: .85123s
+}
+
+.grid__item--71 {
+animation-delay: 1.049s
+}
+
+.grid__item--72 {
+animation-delay: .31909s
+}
+
+.grid__item--73 {
+animation-delay: 1.90263s
+}
+
+.grid__item--74 {
+animation-delay: .62925s
+}
+
+.grid__item--75 {
+animation-delay: 1.22377s
+}</pre>
+          </div>
+        </div>
+      </article>
+      <aside>
+        <div class="block">
+          <h2>Animation</h2>
+
+          <div class="box ani state animation">
+
+            <div class="grid">
+              <div class="grid__container">
+                <div class="grid__item grid__item--1"></div>
+                <div class="grid__item grid__item--2"></div>
+                <div class="grid__item grid__item--3"></div>
+                <div class="grid__item grid__item--4"></div>
+                <div class="grid__item grid__item--5"></div>
+                <div class="grid__item grid__item--6"></div>
+                <div class="grid__item grid__item--7"></div>
+                <div class="grid__item grid__item--8"></div>
+                <div class="grid__item grid__item--9"></div>
+                <div class="grid__item grid__item--10"></div>
+                <div class="grid__item grid__item--11"></div>
+                <div class="grid__item grid__item--12"></div>
+                <div class="grid__item grid__item--13"></div>
+                <div class="grid__item grid__item--14"></div>
+                <div class="grid__item grid__item--15"></div>
+                <div class="grid__item grid__item--16"></div>
+                <div class="grid__item grid__item--17"></div>
+                <div class="grid__item grid__item--18"></div>
+                <div class="grid__item grid__item--19"></div>
+                <div class="grid__item grid__item--20"></div>
+                <div class="grid__item grid__item--21"></div>
+                <div class="grid__item grid__item--22"></div>
+                <div class="grid__item grid__item--23"></div>
+                <div class="grid__item grid__item--24"></div>
+                <div class="grid__item grid__item--25"></div>
+                <div class="grid__item grid__item--26"></div>
+                <div class="grid__item grid__item--27"></div>
+                <div class="grid__item grid__item--28"></div>
+                <div class="grid__item grid__item--29"></div>
+                <div class="grid__item grid__item--30"></div>
+                <div class="grid__item grid__item--31"></div>
+                <div class="grid__item grid__item--32"></div>
+                <div class="grid__item grid__item--33"></div>
+                <div class="grid__item grid__item--34"></div>
+                <div class="grid__item grid__item--35"></div>
+                <div class="grid__item grid__item--36"></div>
+                <div class="grid__item grid__item--37"></div>
+                <div class="grid__item grid__item--38"></div>
+                <div class="grid__item grid__item--39"></div>
+                <div class="grid__item grid__item--40"></div>
+                <div class="grid__item grid__item--41"></div>
+                <div class="grid__item grid__item--42"></div>
+                <div class="grid__item grid__item--43"></div>
+                <div class="grid__item grid__item--44"></div>
+                <div class="grid__item grid__item--45"></div>
+                <div class="grid__item grid__item--46"></div>
+                <div class="grid__item grid__item--47"></div>
+                <div class="grid__item grid__item--48"></div>
+                <div class="grid__item grid__item--49"></div>
+                <div class="grid__item grid__item--50"></div>
+                <div class="grid__item grid__item--51"></div>
+                <div class="grid__item grid__item--52"></div>
+                <div class="grid__item grid__item--53"></div>
+                <div class="grid__item grid__item--54"></div>
+                <div class="grid__item grid__item--55"></div>
+                <div class="grid__item grid__item--56"></div>
+                <div class="grid__item grid__item--57"></div>
+                <div class="grid__item grid__item--58"></div>
+                <div class="grid__item grid__item--59"></div>
+                <div class="grid__item grid__item--60"></div>
+                <div class="grid__item grid__item--61"></div>
+                <div class="grid__item grid__item--62"></div>
+                <div class="grid__item grid__item--63"></div>
+                <div class="grid__item grid__item--64"></div>
+                <div class="grid__item grid__item--65"></div>
+                <div class="grid__item grid__item--66"></div>
+                <div class="grid__item grid__item--67"></div>
+                <div class="grid__item grid__item--68"></div>
+                <div class="grid__item grid__item--69"></div>
+                <div class="grid__item grid__item--70"></div>
+                <div class="grid__item grid__item--71"></div>
+                <div class="grid__item grid__item--72"></div>
+                <div class="grid__item grid__item--73"></div>
+                <div class="grid__item grid__item--74"></div>
+                <div class="grid__item grid__item--75"></div>
+                <div class="grid__item grid__item--76"></div>
+                <div class="grid__item grid__item--77"></div>
+                <div class="grid__item grid__item--78"></div>
+                <div class="grid__item grid__item--79"></div>
+                <div class="grid__item grid__item--80"></div>
+                <div class="grid__item grid__item--81"></div>
+                <div class="grid__item grid__item--82"></div>
+                <div class="grid__item grid__item--83"></div>
+                <div class="grid__item grid__item--84"></div>
+                <div class="grid__item grid__item--85"></div>
+                <div class="grid__item grid__item--86"></div>
+                <div class="grid__item grid__item--87"></div>
+                <div class="grid__item grid__item--88"></div>
+                <div class="grid__item grid__item--89"></div>
+                <div class="grid__item grid__item--90"></div>
+                <div class="grid__item grid__item--91"></div>
+                <div class="grid__item grid__item--92"></div>
+                <div class="grid__item grid__item--93"></div>
+                <div class="grid__item grid__item--94"></div>
+                <div class="grid__item grid__item--95"></div>
+                <div class="grid__item grid__item--96"></div>
+                <div class="grid__item grid__item--97"></div>
+                <div class="grid__item grid__item--98"></div>
+                <div class="grid__item grid__item--99"></div>
+                <div class="grid__item grid__item--100"></div>
+                <div class="grid__item grid__item--101"></div>
+                <div class="grid__item grid__item--102"></div>
+                <div class="grid__item grid__item--103"></div>
+                <div class="grid__item grid__item--104"></div>
+                <div class="grid__item grid__item--105"></div>
+                <div class="grid__item grid__item--106"></div>
+                <div class="grid__item grid__item--107"></div>
+                <div class="grid__item grid__item--108"></div>
+                <div class="grid__item grid__item--109"></div>
+                <div class="grid__item grid__item--110"></div>
+                <div class="grid__item grid__item--111"></div>
+                <div class="grid__item grid__item--112"></div>
+                <div class="grid__item grid__item--113"></div>
+                <div class="grid__item grid__item--114"></div>
+                <div class="grid__item grid__item--115"></div>
+                <div class="grid__item grid__item--116"></div>
+                <div class="grid__item grid__item--117"></div>
+                <div class="grid__item grid__item--118"></div>
+                <div class="grid__item grid__item--119"></div>
+                <div class="grid__item grid__item--120"></div>
+                <div class="grid__item grid__item--121"></div>
+                <div class="grid__item grid__item--122"></div>
+                <div class="grid__item grid__item--123"></div>
+                <div class="grid__item grid__item--124"></div>
+                <div class="grid__item grid__item--125"></div>
+                <div class="grid__item grid__item--126"></div>
+                <div class="grid__item grid__item--127"></div>
+                <div class="grid__item grid__item--128"></div>
+                <div class="grid__item grid__item--129"></div>
+                <div class="grid__item grid__item--130"></div>
+                <div class="grid__item grid__item--131"></div>
+                <div class="grid__item grid__item--132"></div>
+                <div class="grid__item grid__item--133"></div>
+                <div class="grid__item grid__item--134"></div>
+                <div class="grid__item grid__item--135"></div>
+                <div class="grid__item grid__item--136"></div>
+                <div class="grid__item grid__item--137"></div>
+                <div class="grid__item grid__item--138"></div>
+                <div class="grid__item grid__item--139"></div>
+                <div class="grid__item grid__item--140"></div>
+                <div class="grid__item grid__item--141"></div>
+                <div class="grid__item grid__item--142"></div>
+                <div class="grid__item grid__item--143"></div>
+                <div class="grid__item grid__item--144"></div>
+                <div class="grid__item grid__item--145"></div>
+                <div class="grid__item grid__item--146"></div>
+                <div class="grid__item grid__item--147"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </main>
+    <footer>
+      <p>2023 by Kostas Šliažas</p>
+    </footer>
+    <a href="#top" id="totop">Back to top</a>
+  </div>
+  <script src="js/script.min.js" defer></script>
+</body>
+
+</html>

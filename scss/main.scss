@@ -216,7 +216,7 @@ article {
   }
 }
 
-svg {
+.index svg {
   fill: none;
   stroke-width: 1;
   margin: 1em;
@@ -4981,4 +4981,41 @@ $animation-duration: 1s;
   .classGrid > div:nth-child(#{$i}) {
     animation-delay: #{($i * 0.01s)};
   }
+}
+
+@keyframes rotate {
+  from { transform: none; }
+  to { transform: rotateZ(var(--rotate-angle)); }
+}
+
+@keyframes move {
+  60% { transform: translateX(100px); }
+  80% { transform: translate(100px, 30px) rotateZ(60deg); }
+  90% { transform: translate(120px, 100px) rotateZ(70deg); }
+  to { transform: translate(120px, 2000px) rotateZ(80deg); }
+}
+
+#bee {
+  height: 48px;
+  animation: move 2s forwards infinite;
+}
+
+#topleft, #topright {
+  --rotate-angle: -7deg;
+  transform-origin: bottom right;
+  animation: rotate .2s steps(4, start) alternate infinite;
+}
+
+#topright {
+  animation-delay: .1s;
+}
+
+#bottomleft, #bottomright {
+  --rotate-angle: 7deg;
+  transform-origin: top right;
+  animation: rotate .2s steps(4, start) alternate infinite;
+}
+
+#bottomright {
+  animation-delay: .1s;
 }

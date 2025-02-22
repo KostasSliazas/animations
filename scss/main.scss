@@ -4983,39 +4983,50 @@ $animation-duration: 1s;
   }
 }
 
-@keyframes rotate {
-  from { transform: none; }
-  to { transform: rotateZ(var(--rotate-angle)); }
+@keyframes bee-rotate {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateZ(var(--bee-rotate-angle));
+  }
 }
 
-@keyframes move {
-  60% { transform: translateX(100px); }
-  80% { transform: translate(100px, 30px) rotateZ(60deg); }
-  90% { transform: translate(120px, 100px) rotateZ(70deg); }
-  to { transform: translate(120px, 2000px) rotateZ(80deg); }
+@keyframes bee-move {
+  60% {
+    transform: translateX(100px);
+  }
+  80% {
+    transform: translate(100px, 30px) rotateZ(60deg);
+  }
+  90% {
+    transform: translate(120px, 100px) rotateZ(70deg);
+  }
+  to {
+    transform: translate(120px, 2000px) rotateZ(80deg);
+  }
 }
 
 #bee {
   height: 48px;
-  animation: move 2s forwards infinite;
+  animation: bee-move 2s forwards infinite;
 }
 
-#topleft, #topright {
-  --rotate-angle: -7deg;
-  transform-origin: bottom right;
-  animation: rotate .2s steps(4, start) alternate infinite;
-}
-
+#topleft,
 #topright {
-  animation-delay: .1s;
+  --bee-rotate-angle: -7deg;
+  transform-origin: bottom right;
+  animation: bee-rotate 0.2s steps(4, start) alternate infinite;
 }
 
-#bottomleft, #bottomright {
-  --rotate-angle: 7deg;
-  transform-origin: top right;
-  animation: rotate .2s steps(4, start) alternate infinite;
-}
-
+#bottomleft,
 #bottomright {
-  animation-delay: .1s;
+  --bee-rotate-angle: 7deg;
+  transform-origin: top right;
+  animation: bee-rotate 0.2s steps(4, start) alternate infinite;
+}
+
+#topright,
+#bottomright {
+  animation-delay: 0.1s;
 }

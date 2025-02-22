@@ -5498,7 +5498,7 @@ aside .box,
     transform: none;
   }
   to {
-    transform: rotateZ(var(--rotate-angle));
+    transform: rotateZ(var(--bee-rotate-angle));
   }
 }
 @keyframes bee-move {
@@ -5520,23 +5520,21 @@ aside .box,
   animation: bee-move 2s forwards infinite;
 }
 
-#topleft, #topright {
-  --rotate-angle: -7deg;
+#topleft,
+#topright {
+  --bee-rotate-angle: -7deg;
   transform-origin: bottom right;
   animation: bee-rotate 0.2s steps(4, start) alternate infinite;
 }
 
-#topright {
-  animation-delay: 0.1s;
-}
-
-#bottomleft, #bottomright {
-  --rotate-angle: 7deg;
+#bottomleft,
+#bottomright {
+  --bee-rotate-angle: 7deg;
   transform-origin: top right;
   animation: bee-rotate 0.2s steps(4, start) alternate infinite;
 }
 
+#topright,
 #bottomright {
   animation-delay: 0.1s;
 }
-

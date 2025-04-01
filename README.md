@@ -30,11 +30,7 @@ Welcome to my **CSS Animation Experiments** repository! 🎨✨ This project is 
 
 ## 🎨 Showcase
 A few highlights:
-- **Loader Spinners** – Eye-catching loading indicators.
-
-## 💡 Contributing
-Contributions are welcome! If you have cool ideas, submit a pull request or open an issue. Let's create something amazing together! 🌟
-
+- **Loader Spinners** – Eye-catching loading indicators
 ---
 
 Happy Coding! 💻✨

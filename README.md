@@ -1,13 +1,7 @@
 # CSS Animation Experiments Portfolio
 
-Welcome to my **CSS Animation Experiments** repository! 🎨✨ This project is a collection of creative and interactive animations built using **HTML** and **CSS**. Feel free to explore, copy, and integrate these snippets into your own projects. 🚀
+Welcome to my **CSS Animation Experiments** repository!
 
-## 🌟 Features
-- **Pure CSS Animations** – No JavaScript required for most effects.
-- **Modular Code** – Easy to copy and customize.
-- **Browser Compatibility** – Optimized for modern web browsers.
-
-## 🚀 Quick Start
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/KostasSliazas/animations.git

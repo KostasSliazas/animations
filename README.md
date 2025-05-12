@@ -7,8 +7,6 @@
 
 - **Loader Spinners**
 - **Random animations**
-## 
-🛠️ Tools Used
 - **HTML5** – Structure
 - **CSS3** – Styling and animations
 

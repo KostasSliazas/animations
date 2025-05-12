@@ -20,7 +20,7 @@
 
 ## 🛠️ Installation
 
-```
+   ```
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/KostasSliazas/animations.git
@@ -31,9 +31,8 @@
    ```
 3. **Open `index.html` in your browser** to explore the animations. For example:
    ```bash
-   firefox index.html
+   firefox index.html   
    ```
-```
 
 ## 📄 License
 

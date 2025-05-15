@@ -31,10 +31,11 @@
    ```bash
    firefox index.html   
    ```
+## 💖 Support
 
-## 📄 License
+If you find this project helpful, consider supporting it:
 
-This project is licensed under the [MIT License](LICENSE).
+[![Donate](https://img.shields.io/badge/Donate-PayPal-blue.svg)](https://www.paypal.com/paypalme/kostassliazas/)
 
 ## 👤 Author
 
@@ -44,3 +45,7 @@ Kostas Šliažas
 | Username | Profile |
 |----------|---------|
 | [KostasSliazas](https://github.com/KostasSliazas) | https://github.com/KostasSliazas |
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).

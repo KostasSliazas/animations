@@ -5,8 +5,6 @@
 [![Issues](https://img.shields.io/github/issues/KostasSliazas/animations)](https://github.com/KostasSliazas/animations/issues)
 [![Last Commit](https://img.shields.io/github/last-commit/KostasSliazas/animations)](https://github.com/KostasSliazas/animations/commits)
 
-- **Loader Spinners**
-- **Random animations**
 - **HTML5** – Structure
 - **CSS3** – Styling and animations
 

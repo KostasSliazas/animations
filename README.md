@@ -27,18 +27,8 @@
    ```
 3. **Open `index.html` in your browser** to explore the animations. For example:
    ```bash
-   firefox index.html   
+   firefox index.html  
    ```
-## 💖 Support
-
-If you find this project helpful, consider supporting it:
-
-[![Donate](https://img.shields.io/badge/Donate-PayPal-blue.svg)](https://www.paypal.com/paypalme/kostassliazas/)
-
-## 👤 Author
-
-Kostas Šliažas
-## 👥 Contributors
 
 | Username | Profile |
 |----------|---------|

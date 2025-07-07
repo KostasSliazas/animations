@@ -8,13 +8,13 @@
 - **HTML5** – Structure
 - **CSS3** – Styling and animations
 
-## 📚 Table of Contents
+## Table of Contents
 - [Installation](#️-installation)
 - [License](#-license)
 - [Author](#-author)
 - [Contributors](#-contributors)
 
-## 🛠️ Installation
+## Installation
 
    
 1. **Clone the repository:**
@@ -34,6 +34,6 @@
 |----------|---------|
 | [KostasSliazas](https://github.com/KostasSliazas) | https://github.com/KostasSliazas |
 
-## 📄 License
+## License
 
 This project is licensed under the [MIT License](LICENSE).

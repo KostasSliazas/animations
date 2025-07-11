@@ -5,9 +5,6 @@
 [![Issues](https://img.shields.io/github/issues/KostasSliazas/animations)](https://github.com/KostasSliazas/animations/issues)
 [![Last Commit](https://img.shields.io/github/last-commit/KostasSliazas/animations)](https://github.com/KostasSliazas/animations/commits)
 
-- **HTML5** – Structure
-- **CSS3** – Styling and animations
-
 ## Table of Contents
 - [Installation](#️-installation)
 - [License](#-license)

@@ -25,12 +25,6 @@
 3. **Open `index.html` in your browser** to explore the animations. For example:
    ```bash
    firefox index.html  
-   ```
-
-| Username | Profile |
-|----------|---------|
-| [KostasSliazas](https://github.com/KostasSliazas) | https://github.com/KostasSliazas |
-
-## License
+   
 
 This project is licensed under the [MIT License](LICENSE).

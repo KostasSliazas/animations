@@ -1,4 +1,4 @@
-# CSS Animation Experiments Portfolio
+# CSS Animations
 [![License](https://img.shields.io/github/license/KostasSliazas/animations)](LICENSE)
 [![Stars](https://img.shields.io/github/stars/KostasSliazas/animations?style=social)](https://github.com/KostasSliazas/animations/stargazers)
 [![Forks](https://img.shields.io/github/forks/KostasSliazas/animations?style=social)](https://github.com/KostasSliazas/animations/forks)

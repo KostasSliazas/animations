@@ -13,7 +13,6 @@
 
 ## Installation
 
-   
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/KostasSliazas/animations.git
@@ -22,7 +21,7 @@
    ```bash
    cd animations
    ```
-3. **Open `index.html` in your browser** to explore the animations. For example:
+3. **Open `index.html` in your browser**. For example:
    ```bash
    firefox index.html  
    

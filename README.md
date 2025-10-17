@@ -9,7 +9,6 @@
 - [Installation](#️-installation)
 - [License](#-license)
 - [Author](#-author)
-- [Contributors](#-contributors)
 
 ## Installation
 

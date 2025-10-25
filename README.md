@@ -21,7 +21,7 @@
 
 Random CSS animations featuring creative transitions and keyframes.
 ## Features
-
+- animations
 - keyframes
 - transitions
 ## Installation

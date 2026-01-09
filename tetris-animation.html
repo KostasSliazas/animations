@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="CSS animations">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CSS animations</title>
+  <link rel="stylesheet" href="css/main.min.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+</head>
+
+<body>
+  <div id="loader" aria-hidden="true">Loading...</div>
+  <input type="checkbox" id="theme" aria-label="theme" title="Theme">
+  <label for="theme" id="theme-label">Theme</label>
+  <!--[if lt IE 8]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+  <div id="wrapper">
+    <a id="top"></a>
+    <header id="header">
+      <a href="/"><span>daug.eu</span><span id="logo"></span></a>
+    </header>
+    <button class="toggle-btn" id="menu">menu</button>
+    <div class="nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tetris-animation.html">tetris animation</a></li>
+        <li><a href="spining-dots-animation.html">spinning dots animation</a></li>
+        <li><a href="loader3d-animation.html">loader3d animation</a></li>
+        <li><a href="Lithuania-animation.html">Lithuania animation</a></li>
+        <li><a href="cassette-animation.html">cassette animation</a></li>
+        <li><a href="box3d-animation.html">box3d animation</a></li>
+        <li><a href="scale-animation.html">scale animation</a></li>
+        <li><a href="numbers-animation.html">numbers animation</a></li>
+        <li><a href="loader-animation.html">loader animation</a></li>
+        <li><a href="data-title-animation.html">data attribute animation</a></li>
+        <li><a href="speaker-animation.html">speaker animation</a></li>
+        <li><a href="kitty-animation.html">kitty animation</a></li>
+        <li><a href="digital-text-animation.html">digital text animation</a></li>
+        <li><a href="svg-animation.html">svg animation</a></li>
+      </ul>
+    </div>
+    <main class="container">
+      <article>
+        <h1 class="title">Tetris Animation</h1>
+        <div class="block">
+          <h2>HTML</h2>
+          <div class="box code">
+            <pre>&lt;div class=&quot;tetris&quot;&gt;
+  &lt;div class=&quot;tetris__block&quot;&gt;
+    &lt;span class=&quot;tetris__block-span&quot;&gt;&lt;/span&gt;
+    &lt;span class=&quot;tetris__block-span&quot;&gt;&lt;/span&gt;
+    &lt;span class=&quot;tetris__block-span&quot;&gt;&lt;/span&gt;
+    &lt;span class=&quot;tetris__block-span&quot;&gt;&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+          </div>
+        </div>
+        <div class="block">
+          <h2>CSS</h2>
+          <div class="box code">
+            <pre>@keyframes shift {
+  0% {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(0, 24px);
+  }
+}
+
+@keyframes movedown {
+  0% {
+    transform: translate(0, 24px);
+  }
+
+  to {
+    transform: translate(96px, 288px);
+  }
+}
+
+@keyframes movedown1 {
+  0% {
+    transform: translate(0, 24px);
+  }
+
+  to {
+    transform: translate(-96px, 288px);
+  }
+}
+
+@keyframes movedown2 {
+  0% {
+    transform: translate(0, 24px) rotateZ(90deg);
+  }
+
+  to {
+    transform: translate(24px, 288px) rotateZ(360deg);
+  }
+}
+
+@keyframes movedown3 {
+  0% {
+    transform: translate(0, 24px) rotateZ(-270deg);
+  }
+
+  to {
+    transform: translate(-11px, 276px) rotateZ(270deg);
+  }
+}
+
+@keyframes colortetris {
+  0% {
+    background: linear-gradient(to top, var(--border) 0, var(--bg) 24px)
+      no-repeat;
+  }
+
+  to {
+    background: linear-gradient(to top, var(--screen) 0%, var(--screen) 24px)
+      no-repeat;
+  }
+}
+
+/* Block: tetris */
+.tetris {
+  --border: var(--theme-text-color);
+  --bg: var(--theme-base-color);
+  --screen: var(--theme-bg-color);
+  display: block;
+  position: relative;
+  height: 288px;
+  width: 289px;
+  background: var(--screen);
+  box-shadow: 0 0 0 1px var(--border) inset;
+  overflow: hidden;
+}
+
+/* Element: tetris__block */
+.tetris__block {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  font-size: 1.5em;
+  text-align: center;
+  letter-spacing: 0.1em;
+  line-height: 3;
+}
+.tetris__block::before {
+  content: '';
+  height: 24px;
+  width: 287px;
+  position: absolute;
+  bottom: 0;
+  left: 1px;
+  z-index: 1;
+}
+/* Element: tetris__block-span */
+.tetris__block-span {
+  position: absolute;
+  top: -24px;
+  left: 96px;
+  height: 24px;
+  width: 96px;
+  box-shadow: 1px -1px 0 0 var(--border);
+  background:
+    repeating-linear-gradient(0deg, var(--border) 0 1px, transparent 1px 24px),
+    repeating-linear-gradient(90deg, var(--border) 0 1px, transparent 1px 24px)
+      var(--bg);
+}
+
+/* Modifiers for specific spans */
+.tetris__block-span:nth-of-type(3) {
+  width: 72px;
+}
+
+.tetris__block-span:nth-of-type(4) {
+  width: 48px;
+}
+
+.tetris__block-span:nth-of-type(3)::before,
+.tetris__block-span:nth-of-type(4)::before {
+  content: '';
+  height: 24px;
+  position: absolute;
+  top: -24px;
+  background: inherit;
+  box-shadow: inherit;
+}
+
+.tetris__block-span:nth-of-type(3)::before {
+  width: 24px;
+  right: 24px;
+}
+
+.tetris__block-span:nth-of-type(4)::before {
+  width: 48px;
+  left: 24px;
+}
+
+/* Animations */
+.animation .tetris__block-span:nth-of-type(1) {
+  animation: movedown 1s steps(11, end) forwards;
+}
+
+.animation .tetris__block-span:nth-of-type(2) {
+  animation: movedown1 1s 1s steps(11, end) forwards;
+}
+
+.animation .tetris__block-span:nth-of-type(3) {
+  animation: movedown2 1s 2s steps(11, end) forwards;
+}
+
+.animation .tetris__block-span:nth-of-type(4) {
+  animation: movedown3 1s 3s steps(11, end) forwards;
+}
+
+.animation .tetris__block {
+  animation: shift 0.5s 4s steps(4, end) forwards;
+}
+.animation .tetris__block::before {
+  animation: colortetris 0.1s 4s steps(7) infinite alternate;
+}</pre>
+          </div>
+        </div>
+      </article>
+      <aside>
+        <div class="block">
+          <h2>Animation</h2>
+
+          <div class="ani box toggle animation">
+
+            <div class="tetris">
+              <div class="tetris__block">
+                <span class="tetris__block-span"></span>
+                <span class="tetris__block-span"></span>
+                <span class="tetris__block-span"></span>
+                <span class="tetris__block-span"></span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </aside>
+    </main>
+    <footer>
+      <p>2023 by Kostas Šliažas</p>
+    </footer>
+    <a href="#top" id="totop">Back to top</a>
+  </div>
+  <script src="js/script.min.js" defer></script>
+</body>
+
+</html>

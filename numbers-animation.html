@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="CSS animations">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CSS animations</title>
+  <link rel="stylesheet" href="css/main.min.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+</head>
+
+<body>
+  <div id="loader" aria-hidden="true">Loading...</div>
+  <input type="checkbox" id="theme" aria-label="theme" title="Theme">
+  <label for="theme" id="theme-label">Theme</label>
+  <!--[if lt IE 8]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+  <div id="wrapper">
+    <a id="top"></a>
+    <header id="header">
+      <a href="/"><span>daug.eu</span><span id="logo"></span></a>
+    </header>
+    <button class="toggle-btn" id="menu">menu</button>
+    <div class="nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tetris-animation.html">tetris animation</a></li>
+        <li><a href="spining-dots-animation.html">spinning dots animation</a></li>
+        <li><a href="loader3d-animation.html">loader3d animation</a></li>
+        <li><a href="Lithuania-animation.html">Lithuania animation</a></li>
+        <li><a href="cassette-animation.html">cassette animation</a></li>
+        <li><a href="box3d-animation.html">box3d animation</a></li>
+        <li><a href="scale-animation.html">scale animation</a></li>
+        <li><a href="numbers-animation.html">numbers animation</a></li>
+        <li><a href="loader-animation.html">loader animation</a></li>
+        <li><a href="data-title-animation.html">data attribute animation</a></li>
+        <li><a href="speaker-animation.html">speaker animation</a></li>
+        <li><a href="kitty-animation.html">kitty animation</a></li>
+        <li><a href="digital-text-animation.html">digital text animation</a></li>
+        <li><a href="svg-animation.html">svg animation</a></li>
+      </ul>
+    </div>
+    <main class="container">
+      <article>
+        <h1 class="title">Numbers Animation</h1>
+        <div class="block">
+          <h2>HTML</h2>
+          <div class="box code">
+            <pre>
+              &lt;div class=&quot;digit&quot;&gt;
+                &lt;div&gt;&lt;/div&gt;
+                &lt;div&gt;&lt;/div&gt;
+                &lt;div class=&quot;text&quot;&gt;Loading...&lt;/div&gt;
+              &lt;/div&gt;
+              </pre>
+          </div>
+        </div>
+        <div class="block">
+          <h2>CSS</h2>
+          <div class="box code">
+            <pre>
+@keyframes top {
+  0%, 10%, 20%, 30%, 40%, 60%, 70%, 90% {
+    background: var(--theme-text-color);
+  }
+  50%, 80% {
+    background: rgba(0, 0, 0, 0.1);
+  }
+}
+@keyframes topleft {
+  0%, 10%, 30%, 40%, 50%, 90% {
+    background: var(--theme-text-color);
+  }
+  20%, 60%, 70%, 80% {
+    background: rgba(0, 0, 0, 0.1);
+  }
+}
+@keyframes topright {
+  0%, 10%, 20%, 50%, 60%, 70%, 80%, 90% {
+    background: var(--theme-text-color);
+  }
+  30%, 40% {
+    background: rgba(0, 0, 0, 0.1);
+  }
+}
+@keyframes center {
+  0%, 10%, 30%, 40%, 50%, 60%, 70% {
+    background: var(--theme-text-color);
+  }
+  20%, 80%, 90% {
+    background: rgba(0, 0, 0, 0.1);
+  }
+}
+@keyframes centerleft {
+  0%, 20%, 40%, 50%, 60%, 80% {
+    background: rgba(0, 0, 0, 0.1);
+  }
+  10%, 30%, 70%, 90% {
+    background: var(--theme-text-color);
+  }
+}
+@keyframes centerright {
+  0%, 10%, 20%, 30%, 40%, 50%, 60%, 80%, 90% {
+    background: var(--theme-text-color);
+  }
+  70% {
+    background: rgba(0, 0, 0, 0.1);
+  }
+}
+@keyframes bottom {
+  0%, 10%, 30%, 40%, 60%, 70%, 90% {
+    background: var(--theme-text-color);
+  }
+  20%, 50%, 80% {
+    background: rgba(0, 0, 0, 0.1);
+  }
+}
+.digit {
+  width: 48px;
+  height: 48px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.animation .digit {
+  animation: inherit;
+  animation-duration: 10s;
+  animation-timing-function: steps(1);
+}
+
+.digit,
+.digit:before {
+  position: absolute;
+  bottom: 0;
+  display: block;
+}
+
+.digit div:nth-child(1),
+.digit div:nth-child(2) {
+  display: block;
+  height: 10%;
+  width: 50%;
+  position: relative;
+  border-radius: 30%;
+  margin: 0 auto;
+}
+
+.digit div:nth-child(1)::after,
+.digit div:nth-child(1)::before,
+.digit div:nth-child(2)::after,
+.digit div:nth-child(2)::before {
+  height: 400%;
+  width: 20%;
+  position: absolute;
+  content: &quot;&quot;;
+  border-radius: 30%;
+  margin-top: 15%;
+}
+
+.digit div:nth-child(1)::before,
+.digit div:nth-child(2)::before {
+  left: 0;
+  margin-left: -15%;
+}
+
+.digit div:nth-child(1)::after,
+.digit div:nth-child(2)::after {
+  right: 0;
+  margin-right: -15%;
+}
+
+.digit:before {
+  content: &quot;&quot;;
+  width: 50%;
+  height: 10%;
+  border-radius: 30%;
+  margin: 0 0 0 25%;
+  animation-name: bottom;
+  animation-duration: inherit;
+  animation-timing-function: inherit;
+}
+
+.digit div:nth-child(1),
+.digit div:nth-child(1)::after,
+.digit div:nth-child(1)::before,
+.digit div:nth-child(2),
+.digit div:nth-child(2)::after,
+.digit div:nth-child(2)::before {
+  animation-name: top;
+  animation-duration: inherit;
+  animation-timing-function: inherit;
+}
+
+.digit div:nth-child(2) {
+  top: 35%;
+  animation-name: center;
+}
+
+.digit div:nth-child(1)::after,
+.digit div:nth-child(1)::before,
+.digit div:nth-child(2)::after,
+.digit div:nth-child(2)::before {
+  animation-name: topleft;
+}
+
+.digit div:nth-child(1)::after,
+.digit div:nth-child(2)::after,
+.digit div:nth-child(2)::before {
+  animation-name: topright;
+}
+
+.digit div:nth-child(2)::after,
+.digit div:nth-child(2)::before {
+  animation-name: centerleft;
+}
+
+.digit div:nth-child(2)::after {
+  animation-name: centerright;
+}
+
+.digit div:nth-child(3) {
+  position: relative;
+  top: 90%;
+  font-size: 10px;
+}
+</pre>
+          </div>
+        </div>
+      </article>
+      <aside>
+        <div class="block">
+          <h2>Animation</h2>
+          <div class="ani box state animation">
+
+            <div class="digit">
+              <div></div>
+              <div></div>
+              <div class="text">Loading...</div>
+            </div>
+
+          </div>
+        </div>
+      </aside>
+    </main>
+    <footer>
+      <p>2023 by Kostas Šliažas</p>
+    </footer>
+    <a href="#top" id="totop">Back to top</a>
+  </div>
+  <script src="js/script.min.js" defer></script>
+</body>
+
+</html>

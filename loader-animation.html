@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="CSS animations">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CSS animations</title>
+  <link rel="stylesheet" href="css/main.min.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+</head>
+
+<body>
+  <div id="loader" aria-hidden="true">Loading...</div>
+  <input type="checkbox" id="theme" aria-label="theme" title="Theme">
+  <label for="theme" id="theme-label">Theme</label>
+  <!--[if lt IE 8]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+  <div id="wrapper">
+    <a id="top"></a>
+    <header id="header">
+      <a href="/"><span>daug.eu</span><span id="logo"></span></a>
+    </header>
+    <button class="toggle-btn" id="menu">menu</button>
+    <div class="nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tetris-animation.html">tetris animation</a></li>
+        <li><a href="spining-dots-animation.html">spinning dots animation</a></li>
+        <li><a href="loader3d-animation.html">loader3d animation</a></li>
+        <li><a href="Lithuania-animation.html">Lithuania animation</a></li>
+        <li><a href="cassette-animation.html">cassette animation</a></li>
+        <li><a href="box3d-animation.html">box3d animation</a></li>
+        <li><a href="scale-animation.html">scale animation</a></li>
+        <li><a href="numbers-animation.html">numbers animation</a></li>
+        <li><a href="loader-animation.html">loader animation</a></li>
+        <li><a href="data-title-animation.html">data attribute animation</a></li>
+        <li><a href="speaker-animation.html">speaker animation</a></li>
+        <li><a href="kitty-animation.html">kitty animation</a></li>
+        <li><a href="digital-text-animation.html">digital text animation</a></li>
+        <li><a href="svg-animation.html">svg animation</a></li>
+      </ul>
+    </div>
+    <main class="container">
+      <article>
+        <h1 class="title">loader animation</h1>
+        <div class="block">
+          <h2>HTML</h2>
+          <div class="box code">
+            <pre>&lt;div class=&quot;logo&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;</pre>
+          </div>
+        </div>
+        <div class="block">
+          <h2>CSS</h2>
+          <div class="box code">
+
+            <pre>.logo,
+.logo::after,
+.logo::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.logo {
+  width: 72px;
+  height: 72px;
+  border-radius: 7px;
+  box-shadow: inset 0 0 0 1px var(--theme-text-color);
+  background: var(--theme-base-color);
+  text-align: center;
+  animation: rotate1 1s linear infinite;
+  transform: translate(-50%, -50%) perspective(77px) rotateX(180deg);
+  top: 50%;
+  left: 50%;
+}
+
+.logo::after,
+.logo::before {
+  content: &quot;Loading...&quot;;
+  font-size: 12px;
+  text-align: center;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.logo::after {
+  background: url(&quot;data:image/png;base64,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&quot;) center no-repeat;
+}
+</pre>
+
+          </div>
+        </div>
+      </article>
+      <aside>
+        <div class="block">
+          <h2>Animation</h2>
+
+          <div class="logo" aria-hidden="true"></div>
+
+        </div>
+      </aside>
+    </main>
+    <footer>
+      <p>2023 by Kostas Šliažas</p>
+    </footer>
+    <a href="#top" id="totop">Back to top</a>
+  </div>
+  <script src="js/gall.min.js" defer></script>
+  <script src="js/script.min.js" defer></script>
+</body>
+
+</html>

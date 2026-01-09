@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CSS animations</title>
+  <link rel="stylesheet" href="css/main.min.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+</head>
+
+<body>
+  <div id="loader" aria-hidden="true">Loading...</div>
+  <input type="checkbox" id="theme" aria-label="theme" title="Theme">
+  <label for="theme" id="theme-label">Theme</label>
+  <!--[if lt IE 8]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+  <div id="wrapper">
+    <a id="top"></a>
+    <header id="header">
+      <a href="/"><span>daug.eu</span><span id="logo"></span></a>
+    </header>
+    <button class="toggle-btn" id="menu">menu</button>
+    <div class="nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tetris-animation.html">tetris animation</a></li>
+        <li><a href="spining-dots-animation.html">spinning dots animation</a></li>
+        <li><a href="loader3d-animation.html">loader3d animation</a></li>
+        <li><a href="Lithuania-animation.html">Lithuania animation</a></li>
+        <li><a href="cassette-animation.html">cassette animation</a></li>
+        <li><a href="box3d-animation.html">box3d animation</a></li>
+        <li><a href="scale-animation.html">scale animation</a></li>
+        <li><a href="numbers-animation.html">numbers animation</a></li>
+        <li><a href="loader-animation.html">loader animation</a></li>
+        <li><a href="data-title-animation.html">data attribute animation</a></li>
+        <li><a href="speaker-animation.html">speaker animation</a></li>
+        <li><a href="kitty-animation.html">kitty animation</a></li>
+        <li><a href="digital-text-animation.html">digital text animation</a></li>
+        <li><a href="svg-animation.html">svg animation</a></li>
+      </ul>
+    </div>
+    <main class="container">
+      <article>
+        <h1 class="title">box3d animation</h1>
+        <div class="block">
+          <h2>HTML</h2>
+          <div class="box code">
+            <pre>&lt;div class=&quot;box3d__download&quot;&gt;
+&lt;div class=&quot;box3d__bands&quot;&gt;&lt;a href=&quot;https://dl.dropboxusercontent.com/s/fmmiyresjdhr7t8/SVG-MAX-by-Kostas-Sliazas.zip?dl=0&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;DOWNLOAD&lt;/a&gt;&lt;/div&gt;
+&lt;div class=&quot;box3d__fron&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;box3d__fron box3d__fron--backf&quot;&gt;&lt;span class=&quot;box3d__text&quot;&gt;&amp;#128285;&lt;br&gt;download&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;box3d__left&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;box3d__left box3d__left--backf&quot;&gt;&lt;span class=&quot;box3d__text&quot;&gt;&amp;#9745;&lt;br&gt;free&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;box3d__back&quot;&gt;&lt;span class=&quot;box3d__text&quot;&gt;svg&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;box3d__righ&quot;&gt;&lt;span class=&quot;box3d__text&quot;&gt;vectors&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;box3d__boto&quot;&gt;&lt;span class=&quot;box3d__text&quot;&gt;🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;box3d__topl&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;box3d__topr&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;box3d__topf&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;box3d__topb&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;</pre>
+          </div>
+        </div>
+        <div class="block">
+          <h2>CSS</h2>
+          <div class="box code">
+            <pre>@keyframes scaleshadow {
+  25% {
+    box-shadow:
+      0 0 0.125em rgba(0, 0, 0, 0.2),
+      0 0 0.125em rgba(0, 0, 0, 0.2),
+      -0.35em 0 0.125em rgba(0, 0, 0, 0.2),
+      0.35em 0 0.125em rgba(0, 0, 0, 0.2);
+  }
+  50% {
+    box-shadow:
+      0 0 0.125em rgba(0, 0, 0, 0.2),
+      0 0 0.125em rgba(0, 0, 0, 0.2),
+      -0.25em 0 0.125em rgba(0, 0, 0, 0.2),
+      0.25em 0 0.125em rgba(0, 0, 0, 0.2);
+  }
+  75% {
+    box-shadow:
+      0 -0.35em 0.125em rgba(0, 0, 0, 0.2),
+      0 0.35em 0.125em rgba(0, 0, 0, 0.2),
+      -0.25em 0 0.125em rgba(0, 0, 0, 0.2),
+      0.25em 0 0.125em rgba(0, 0, 0, 0.2);
+  }
+  to {
+    box-shadow:
+      0 -0.25em 0.125em rgba(0, 0, 0, 0.2),
+      0 0.25em 0.125em rgba(0, 0, 0, 0.2),
+      -0.25em 0 0.125em rgba(0, 0, 0, 0.2),
+      0.25em 0 0.125em rgba(0, 0, 0, 0.2);
+  }
+}
+@keyframes topl {
+  to {
+    transform: translateY(-0.5em) rotateX(90deg) rotateY(-220deg);
+  }
+}
+@keyframes topr {
+  to {
+    transform: translateY(-0.5em) rotateX(90deg) rotateY(220deg);
+  }
+}
+@keyframes topf {
+  to {
+    transform: translateZ(0.5em) rotateZ(90deg) rotateY(130deg);
+  }
+}
+@keyframes topb {
+  to {
+    transform: translateZ(-0.5em) rotateZ(-90deg) rotateY(120deg);
+  }
+}
+@keyframes rotate {
+  to {
+    transform: rotateX(-45deg) rotateY(-305deg);
+  }
+}
+@keyframes outs {
+  70%,
+  to {
+    transform: scale(1) translate(-50%, -100%);
+  }
+}
+.box3d {
+  font-size: 9em;
+  perspective: 300px;
+  user-select: none;
+}
+.box3d__download a {
+  color: var(--theme-text-color);
+}
+.box3d__download {
+  animation: rotate 10s linear infinite;
+  height: 1em;
+  position: relative;
+  text-align: center;
+  transform-origin: center center;
+  transform-style: preserve-3d;
+  transform: rotateX(-45deg) rotateY(55deg);
+  width: 1em;
+}
+.box3d__fron {
+  transform: translateZ(0.5em);
+}
+.box3d__back {
+  transform: scaleX(-1) translateZ(-0.5em);
+}
+.box3d__left {
+  transform: translateX(-0.5em) rotateY(-90deg);
+}
+.box3d__righ {
+  transform: translateX(0.5em) rotateY(90deg);
+}
+.box3d__boto {
+  transform: translateY(0.5em) rotateX(90deg);
+}
+.box3d__topl,
+.box3d__topr {
+  transform-origin: left center;
+  transform: translateY(-0.5em) rotateX(90deg);
+  z-index: 1;
+}
+.box3d__topr {
+  right: 0;
+  transform-origin: right center;
+}
+.box3d__topf {
+  right: 0;
+  transform-origin: 0.5em 0;
+  transform: translateZ(0.5em) rotateZ(90deg) rotateY(-90deg);
+}
+.box3d__topb {
+  transform-origin: 0 0;
+  transform: translateZ(-0.5em) rotateZ(-90deg) rotateY(-90deg);
+}
+.box3d__back,
+.box3d__boto,
+.box3d__fron,
+.box3d__left,
+.box3d__righ {
+  background: #e7ddb8;
+  box-sizing: border-box;
+  height: 1em;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 1em;
+}
+.box3d__back,
+.box3d__fron,
+.box3d__left,
+.box3d__righ {
+  box-shadow:
+    0 0 0.1em #796a3541 inset,
+    0.2em 0.1em 0.2em 0.1em #ad9f6b66 inset;
+}
+.box3d__boto {
+  box-shadow: 0 0 0.125em 0 rgba(0, 0, 0, 0.4);
+}
+.box3d__topb,
+.box3d__topf,
+.box3d__topl,
+.box3d__topr {
+  box-shadow:
+    0 0 0.1em #796a3541 inset,
+    0 0 0.2em 0.1em #ad9f6b66 inset;
+  background: #e7ddb8;
+  box-sizing: border-box;
+  height: 1em;
+  outline: 1px solid transparent;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 0.5em;
+}
+.box3d__download &gt; div {
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  display: flex;
+  place-content: center;
+  place-items: center;
+}
+.animation .box3d__download &gt; div {
+  animation-direction: reverse;
+  animation-fill-mode: backwards;
+  animation-name: initial;
+}
+.animation .box3d__download .box3d__bands {
+  animation-delay: 0s;
+  animation-duration: 0.5s;
+}
+.box3d__topl {
+  animation-name: topl;
+}
+.box3d__topr {
+  animation-name: topr;
+}
+.box3d__topb,
+.box3d__topf {
+  animation-delay: 1s;
+}
+.box3d__topf {
+  animation-name: topf;
+}
+.box3d__topb {
+  animation-name: topb;
+}
+.box3d__boto {
+  animation-name: scaleshadow;
+  animation-duration: 2.5s;
+  animation-delay: 0.5s;
+}
+.box3d__bands {
+  animation: 1s 1s outs;
+}
+.box3d__backf {
+  backface-visibility: hidden;
+  background: 0 0;
+  z-index: 1;
+}
+.box3d__bands {
+  font-size: 12px;
+  height: 100%;
+  left: 50%;
+  position: absolute;
+  transform: scale(0) translate(-50%, -50%);
+}
+.box3d__text {
+  font-size: 16px;
+}
+</pre>
+          </div>
+        </div>
+      </article>
+      <aside>
+        <div class="block">
+          <h2>Animation</h2>
+          <div class="ani box state">
+
+            <div class="box3d">
+              <div class="box3d__download">
+                <div class="box3d__bands"><a href="https://dl.dropboxusercontent.com/s/fmmiyresjdhr7t8/SVG-MAX-by-Kostas-Sliazas.zip?dl=0" target="_blank" rel="noopener">DOWNLOAD</a></div>
+                <div class="box3d__fron"></div>
+                <div class="box3d__fron box3d__fron--backf"><span class="box3d__text">&#128285;<br>download</span></div>
+                <div class="box3d__left"></div>
+                <div class="box3d__left box3d__left--backf"><span class="box3d__text">&#9745;<br>free</span></div>
+                <div class="box3d__back"><span class="box3d__text">svg</span></div>
+                <div class="box3d__righ"><span class="box3d__text">vectors</span></div>
+                <div class="box3d__boto"><span class="box3d__text">🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾</span></div>
+                <div class="box3d__topl"></div>
+                <div class="box3d__topr"></div>
+                <div class="box3d__topf"></div>
+                <div class="box3d__topb"></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </aside>
+    </main>
+    <footer>
+      <p>2023 by Kostas Šliažas</p>
+    </footer>
+    <a href="#top" id="totop">Back to top</a>
+  </div>
+  <script src="js/script.min.js" defer></script>
+</body>
+
+</html>

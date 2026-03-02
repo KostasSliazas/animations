@@ -1,61 +1,67 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="CSS animations" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CSS animations</title>
+    <link rel="stylesheet" href="css/main.min.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="CSS animations">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>CSS animations</title>
-  <link rel="stylesheet" href="css/main.min.css">
-  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-  <link rel="manifest" href="site.webmanifest">
-</head>
-
-<body>
-  <div id="loader" aria-hidden="true">Loading...</div>
-  <input type="checkbox" id="theme" aria-label="theme" title="Theme">
-  <label for="theme" id="theme-label">Theme</label>
-  <!--[if lt IE 8]>
+  <body>
+    <div id="loader" aria-hidden="true">Loading...</div>
+    <input type="checkbox" id="theme" aria-label="theme" title="Theme" />
+    <label for="theme" id="theme-label">Theme</label>
+    <!--[if lt IE 8]>
       <p class="browsehappy">
-        You are using an <strong>outdated</strong> browser. Please
-        <a href="#">upgrade your browser</a> to improve your experience.
+        You are using an
+        <strong>outdated</strong>
+        browser. Please
+        <a href="#">upgrade your browser</a>
+        to improve your experience.
       </p>
     <![endif]-->
-  <div id="wrapper">
-    <a id="top"></a>
-    <header id="header">
-      <a href="/"><span>daug.eu</span><span id="logo"></span></a>
-    </header>
-    <button class="toggle-btn" id="menu">menu</button>
-    <div class="nav">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="tetris-animation.html">tetris animation</a></li>
-        <li><a href="spining-dots-animation.html">spinning dots animation</a></li>
-        <li><a href="loader3d-animation.html">loader3d animation</a></li>
-        <li><a href="Lithuania-animation.html">Lithuania animation</a></li>
-        <li><a href="cassette-animation.html">cassette animation</a></li>
-        <li><a href="box3d-animation.html">box3d animation</a></li>
-        <li><a href="scale-animation.html">scale animation</a></li>
-        <li><a href="numbers-animation.html">numbers animation</a></li>
-        <li><a href="loader-animation.html">loader animation</a></li>
-        <li><a href="data-title-animation.html">data attribute animation</a></li>
-        <li><a href="speaker-animation.html">speaker animation</a></li>
-        <li><a href="kitty-animation.html">kitty animation</a></li>
-        <li><a href="digital-text-animation.html">digital text animation</a></li>
-        <li><a href="svg-animation.html">svg animation</a></li>
-      </ul>
-    </div>
-    <main class="container">
-      <article>
-        <h1 class="title">Lithuania map Animation</h1>
-        <div class="block">
-          <h2>HTML</h2>
-          <div class="box code">
-            <pre>&lt;div class=&quot;grid&quot;&gt;
+    <div id="wrapper">
+      <a id="top"></a>
+      <header id="header">
+        <a href="/">
+          <span>daug.eu</span>
+          <span id="logo"></span>
+        </a>
+      </header>
+      <button class="toggle-btn" id="menu">menu</button>
+      <div class="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="tetris-animation.html">tetris animation</a></li>
+          <li><a href="spining-dots-animation.html">spinning dots animation</a></li>
+          <li><a href="loader3d-animation.html">loader3d animation</a></li>
+          <li><a href="Lithuania-animation.html">Lithuania animation</a></li>
+          <li><a href="cassette-animation.html">cassette animation</a></li>
+          <li><a href="box3d-animation.html">box3d animation</a></li>
+          <li><a href="scale-animation.html">scale animation</a></li>
+          <li><a href="numbers-animation.html">numbers animation</a></li>
+          <li><a href="loader-animation.html">loader animation</a></li>
+          <li><a href="data-title-animation.html">data attribute animation</a></li>
+          <li><a href="speaker-animation.html">speaker animation</a></li>
+          <li><a href="kitty-animation.html">kitty animation</a></li>
+          <li><a href="digital-text-animation.html">digital text animation</a></li>
+          <li><a href="svg-animation.html">svg animation</a></li>
+        </ul>
+      </div>
+      <main class="container">
+        <article>
+          <h1 class="title">Lithuania map Animation</h1>
+          <div class="block">
+            <h2>HTML</h2>
+            <div class="box code">
+              <pre>
+&lt;div class=&quot;grid&quot;&gt;
 &lt;div class=&quot;grid__container&quot;&gt;
 &lt;div class=&quot;grid__item grid__item--1&quot;&gt;&lt;/div&gt;
 &lt;div class=&quot;grid__item grid__item--2&quot;&gt;&lt;/div&gt;
@@ -205,13 +211,15 @@
 &lt;div class=&quot;grid__item grid__item--146&quot;&gt;&lt;/div&gt;
 &lt;div class=&quot;grid__item grid__item--147&quot;&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;</pre>
+&lt;/div&gt;</pre
+              >
+            </div>
           </div>
-        </div>
-        <div class="block">
-          <h2>CSS</h2>
-          <div class="box code">
-            <pre>@keyframes backgrnd {
+          <div class="block">
+            <h2>CSS</h2>
+            <div class="box code">
+              <pre>
+@keyframes backgrnd {
 0% {
 background-color: var(--theme-bg-color)
 }
@@ -605,177 +613,176 @@ animation-delay: .62925s
 
 .grid__item--75 {
 animation-delay: 1.22377s
-}</pre>
+}</pre
+              >
+            </div>
           </div>
-        </div>
-      </article>
-      <aside>
-        <div class="block">
-          <h2>Animation</h2>
+        </article>
+        <aside>
+          <div class="block">
+            <h2>Animation</h2>
 
-          <div class="box ani state animation">
-
-            <div class="grid">
-              <div class="grid__container">
-                <div class="grid__item grid__item--1"></div>
-                <div class="grid__item grid__item--2"></div>
-                <div class="grid__item grid__item--3"></div>
-                <div class="grid__item grid__item--4"></div>
-                <div class="grid__item grid__item--5"></div>
-                <div class="grid__item grid__item--6"></div>
-                <div class="grid__item grid__item--7"></div>
-                <div class="grid__item grid__item--8"></div>
-                <div class="grid__item grid__item--9"></div>
-                <div class="grid__item grid__item--10"></div>
-                <div class="grid__item grid__item--11"></div>
-                <div class="grid__item grid__item--12"></div>
-                <div class="grid__item grid__item--13"></div>
-                <div class="grid__item grid__item--14"></div>
-                <div class="grid__item grid__item--15"></div>
-                <div class="grid__item grid__item--16"></div>
-                <div class="grid__item grid__item--17"></div>
-                <div class="grid__item grid__item--18"></div>
-                <div class="grid__item grid__item--19"></div>
-                <div class="grid__item grid__item--20"></div>
-                <div class="grid__item grid__item--21"></div>
-                <div class="grid__item grid__item--22"></div>
-                <div class="grid__item grid__item--23"></div>
-                <div class="grid__item grid__item--24"></div>
-                <div class="grid__item grid__item--25"></div>
-                <div class="grid__item grid__item--26"></div>
-                <div class="grid__item grid__item--27"></div>
-                <div class="grid__item grid__item--28"></div>
-                <div class="grid__item grid__item--29"></div>
-                <div class="grid__item grid__item--30"></div>
-                <div class="grid__item grid__item--31"></div>
-                <div class="grid__item grid__item--32"></div>
-                <div class="grid__item grid__item--33"></div>
-                <div class="grid__item grid__item--34"></div>
-                <div class="grid__item grid__item--35"></div>
-                <div class="grid__item grid__item--36"></div>
-                <div class="grid__item grid__item--37"></div>
-                <div class="grid__item grid__item--38"></div>
-                <div class="grid__item grid__item--39"></div>
-                <div class="grid__item grid__item--40"></div>
-                <div class="grid__item grid__item--41"></div>
-                <div class="grid__item grid__item--42"></div>
-                <div class="grid__item grid__item--43"></div>
-                <div class="grid__item grid__item--44"></div>
-                <div class="grid__item grid__item--45"></div>
-                <div class="grid__item grid__item--46"></div>
-                <div class="grid__item grid__item--47"></div>
-                <div class="grid__item grid__item--48"></div>
-                <div class="grid__item grid__item--49"></div>
-                <div class="grid__item grid__item--50"></div>
-                <div class="grid__item grid__item--51"></div>
-                <div class="grid__item grid__item--52"></div>
-                <div class="grid__item grid__item--53"></div>
-                <div class="grid__item grid__item--54"></div>
-                <div class="grid__item grid__item--55"></div>
-                <div class="grid__item grid__item--56"></div>
-                <div class="grid__item grid__item--57"></div>
-                <div class="grid__item grid__item--58"></div>
-                <div class="grid__item grid__item--59"></div>
-                <div class="grid__item grid__item--60"></div>
-                <div class="grid__item grid__item--61"></div>
-                <div class="grid__item grid__item--62"></div>
-                <div class="grid__item grid__item--63"></div>
-                <div class="grid__item grid__item--64"></div>
-                <div class="grid__item grid__item--65"></div>
-                <div class="grid__item grid__item--66"></div>
-                <div class="grid__item grid__item--67"></div>
-                <div class="grid__item grid__item--68"></div>
-                <div class="grid__item grid__item--69"></div>
-                <div class="grid__item grid__item--70"></div>
-                <div class="grid__item grid__item--71"></div>
-                <div class="grid__item grid__item--72"></div>
-                <div class="grid__item grid__item--73"></div>
-                <div class="grid__item grid__item--74"></div>
-                <div class="grid__item grid__item--75"></div>
-                <div class="grid__item grid__item--76"></div>
-                <div class="grid__item grid__item--77"></div>
-                <div class="grid__item grid__item--78"></div>
-                <div class="grid__item grid__item--79"></div>
-                <div class="grid__item grid__item--80"></div>
-                <div class="grid__item grid__item--81"></div>
-                <div class="grid__item grid__item--82"></div>
-                <div class="grid__item grid__item--83"></div>
-                <div class="grid__item grid__item--84"></div>
-                <div class="grid__item grid__item--85"></div>
-                <div class="grid__item grid__item--86"></div>
-                <div class="grid__item grid__item--87"></div>
-                <div class="grid__item grid__item--88"></div>
-                <div class="grid__item grid__item--89"></div>
-                <div class="grid__item grid__item--90"></div>
-                <div class="grid__item grid__item--91"></div>
-                <div class="grid__item grid__item--92"></div>
-                <div class="grid__item grid__item--93"></div>
-                <div class="grid__item grid__item--94"></div>
-                <div class="grid__item grid__item--95"></div>
-                <div class="grid__item grid__item--96"></div>
-                <div class="grid__item grid__item--97"></div>
-                <div class="grid__item grid__item--98"></div>
-                <div class="grid__item grid__item--99"></div>
-                <div class="grid__item grid__item--100"></div>
-                <div class="grid__item grid__item--101"></div>
-                <div class="grid__item grid__item--102"></div>
-                <div class="grid__item grid__item--103"></div>
-                <div class="grid__item grid__item--104"></div>
-                <div class="grid__item grid__item--105"></div>
-                <div class="grid__item grid__item--106"></div>
-                <div class="grid__item grid__item--107"></div>
-                <div class="grid__item grid__item--108"></div>
-                <div class="grid__item grid__item--109"></div>
-                <div class="grid__item grid__item--110"></div>
-                <div class="grid__item grid__item--111"></div>
-                <div class="grid__item grid__item--112"></div>
-                <div class="grid__item grid__item--113"></div>
-                <div class="grid__item grid__item--114"></div>
-                <div class="grid__item grid__item--115"></div>
-                <div class="grid__item grid__item--116"></div>
-                <div class="grid__item grid__item--117"></div>
-                <div class="grid__item grid__item--118"></div>
-                <div class="grid__item grid__item--119"></div>
-                <div class="grid__item grid__item--120"></div>
-                <div class="grid__item grid__item--121"></div>
-                <div class="grid__item grid__item--122"></div>
-                <div class="grid__item grid__item--123"></div>
-                <div class="grid__item grid__item--124"></div>
-                <div class="grid__item grid__item--125"></div>
-                <div class="grid__item grid__item--126"></div>
-                <div class="grid__item grid__item--127"></div>
-                <div class="grid__item grid__item--128"></div>
-                <div class="grid__item grid__item--129"></div>
-                <div class="grid__item grid__item--130"></div>
-                <div class="grid__item grid__item--131"></div>
-                <div class="grid__item grid__item--132"></div>
-                <div class="grid__item grid__item--133"></div>
-                <div class="grid__item grid__item--134"></div>
-                <div class="grid__item grid__item--135"></div>
-                <div class="grid__item grid__item--136"></div>
-                <div class="grid__item grid__item--137"></div>
-                <div class="grid__item grid__item--138"></div>
-                <div class="grid__item grid__item--139"></div>
-                <div class="grid__item grid__item--140"></div>
-                <div class="grid__item grid__item--141"></div>
-                <div class="grid__item grid__item--142"></div>
-                <div class="grid__item grid__item--143"></div>
-                <div class="grid__item grid__item--144"></div>
-                <div class="grid__item grid__item--145"></div>
-                <div class="grid__item grid__item--146"></div>
-                <div class="grid__item grid__item--147"></div>
+            <div class="box ani state animation">
+              <div class="grid">
+                <div class="grid__container">
+                  <div class="grid__item grid__item--1"></div>
+                  <div class="grid__item grid__item--2"></div>
+                  <div class="grid__item grid__item--3"></div>
+                  <div class="grid__item grid__item--4"></div>
+                  <div class="grid__item grid__item--5"></div>
+                  <div class="grid__item grid__item--6"></div>
+                  <div class="grid__item grid__item--7"></div>
+                  <div class="grid__item grid__item--8"></div>
+                  <div class="grid__item grid__item--9"></div>
+                  <div class="grid__item grid__item--10"></div>
+                  <div class="grid__item grid__item--11"></div>
+                  <div class="grid__item grid__item--12"></div>
+                  <div class="grid__item grid__item--13"></div>
+                  <div class="grid__item grid__item--14"></div>
+                  <div class="grid__item grid__item--15"></div>
+                  <div class="grid__item grid__item--16"></div>
+                  <div class="grid__item grid__item--17"></div>
+                  <div class="grid__item grid__item--18"></div>
+                  <div class="grid__item grid__item--19"></div>
+                  <div class="grid__item grid__item--20"></div>
+                  <div class="grid__item grid__item--21"></div>
+                  <div class="grid__item grid__item--22"></div>
+                  <div class="grid__item grid__item--23"></div>
+                  <div class="grid__item grid__item--24"></div>
+                  <div class="grid__item grid__item--25"></div>
+                  <div class="grid__item grid__item--26"></div>
+                  <div class="grid__item grid__item--27"></div>
+                  <div class="grid__item grid__item--28"></div>
+                  <div class="grid__item grid__item--29"></div>
+                  <div class="grid__item grid__item--30"></div>
+                  <div class="grid__item grid__item--31"></div>
+                  <div class="grid__item grid__item--32"></div>
+                  <div class="grid__item grid__item--33"></div>
+                  <div class="grid__item grid__item--34"></div>
+                  <div class="grid__item grid__item--35"></div>
+                  <div class="grid__item grid__item--36"></div>
+                  <div class="grid__item grid__item--37"></div>
+                  <div class="grid__item grid__item--38"></div>
+                  <div class="grid__item grid__item--39"></div>
+                  <div class="grid__item grid__item--40"></div>
+                  <div class="grid__item grid__item--41"></div>
+                  <div class="grid__item grid__item--42"></div>
+                  <div class="grid__item grid__item--43"></div>
+                  <div class="grid__item grid__item--44"></div>
+                  <div class="grid__item grid__item--45"></div>
+                  <div class="grid__item grid__item--46"></div>
+                  <div class="grid__item grid__item--47"></div>
+                  <div class="grid__item grid__item--48"></div>
+                  <div class="grid__item grid__item--49"></div>
+                  <div class="grid__item grid__item--50"></div>
+                  <div class="grid__item grid__item--51"></div>
+                  <div class="grid__item grid__item--52"></div>
+                  <div class="grid__item grid__item--53"></div>
+                  <div class="grid__item grid__item--54"></div>
+                  <div class="grid__item grid__item--55"></div>
+                  <div class="grid__item grid__item--56"></div>
+                  <div class="grid__item grid__item--57"></div>
+                  <div class="grid__item grid__item--58"></div>
+                  <div class="grid__item grid__item--59"></div>
+                  <div class="grid__item grid__item--60"></div>
+                  <div class="grid__item grid__item--61"></div>
+                  <div class="grid__item grid__item--62"></div>
+                  <div class="grid__item grid__item--63"></div>
+                  <div class="grid__item grid__item--64"></div>
+                  <div class="grid__item grid__item--65"></div>
+                  <div class="grid__item grid__item--66"></div>
+                  <div class="grid__item grid__item--67"></div>
+                  <div class="grid__item grid__item--68"></div>
+                  <div class="grid__item grid__item--69"></div>
+                  <div class="grid__item grid__item--70"></div>
+                  <div class="grid__item grid__item--71"></div>
+                  <div class="grid__item grid__item--72"></div>
+                  <div class="grid__item grid__item--73"></div>
+                  <div class="grid__item grid__item--74"></div>
+                  <div class="grid__item grid__item--75"></div>
+                  <div class="grid__item grid__item--76"></div>
+                  <div class="grid__item grid__item--77"></div>
+                  <div class="grid__item grid__item--78"></div>
+                  <div class="grid__item grid__item--79"></div>
+                  <div class="grid__item grid__item--80"></div>
+                  <div class="grid__item grid__item--81"></div>
+                  <div class="grid__item grid__item--82"></div>
+                  <div class="grid__item grid__item--83"></div>
+                  <div class="grid__item grid__item--84"></div>
+                  <div class="grid__item grid__item--85"></div>
+                  <div class="grid__item grid__item--86"></div>
+                  <div class="grid__item grid__item--87"></div>
+                  <div class="grid__item grid__item--88"></div>
+                  <div class="grid__item grid__item--89"></div>
+                  <div class="grid__item grid__item--90"></div>
+                  <div class="grid__item grid__item--91"></div>
+                  <div class="grid__item grid__item--92"></div>
+                  <div class="grid__item grid__item--93"></div>
+                  <div class="grid__item grid__item--94"></div>
+                  <div class="grid__item grid__item--95"></div>
+                  <div class="grid__item grid__item--96"></div>
+                  <div class="grid__item grid__item--97"></div>
+                  <div class="grid__item grid__item--98"></div>
+                  <div class="grid__item grid__item--99"></div>
+                  <div class="grid__item grid__item--100"></div>
+                  <div class="grid__item grid__item--101"></div>
+                  <div class="grid__item grid__item--102"></div>
+                  <div class="grid__item grid__item--103"></div>
+                  <div class="grid__item grid__item--104"></div>
+                  <div class="grid__item grid__item--105"></div>
+                  <div class="grid__item grid__item--106"></div>
+                  <div class="grid__item grid__item--107"></div>
+                  <div class="grid__item grid__item--108"></div>
+                  <div class="grid__item grid__item--109"></div>
+                  <div class="grid__item grid__item--110"></div>
+                  <div class="grid__item grid__item--111"></div>
+                  <div class="grid__item grid__item--112"></div>
+                  <div class="grid__item grid__item--113"></div>
+                  <div class="grid__item grid__item--114"></div>
+                  <div class="grid__item grid__item--115"></div>
+                  <div class="grid__item grid__item--116"></div>
+                  <div class="grid__item grid__item--117"></div>
+                  <div class="grid__item grid__item--118"></div>
+                  <div class="grid__item grid__item--119"></div>
+                  <div class="grid__item grid__item--120"></div>
+                  <div class="grid__item grid__item--121"></div>
+                  <div class="grid__item grid__item--122"></div>
+                  <div class="grid__item grid__item--123"></div>
+                  <div class="grid__item grid__item--124"></div>
+                  <div class="grid__item grid__item--125"></div>
+                  <div class="grid__item grid__item--126"></div>
+                  <div class="grid__item grid__item--127"></div>
+                  <div class="grid__item grid__item--128"></div>
+                  <div class="grid__item grid__item--129"></div>
+                  <div class="grid__item grid__item--130"></div>
+                  <div class="grid__item grid__item--131"></div>
+                  <div class="grid__item grid__item--132"></div>
+                  <div class="grid__item grid__item--133"></div>
+                  <div class="grid__item grid__item--134"></div>
+                  <div class="grid__item grid__item--135"></div>
+                  <div class="grid__item grid__item--136"></div>
+                  <div class="grid__item grid__item--137"></div>
+                  <div class="grid__item grid__item--138"></div>
+                  <div class="grid__item grid__item--139"></div>
+                  <div class="grid__item grid__item--140"></div>
+                  <div class="grid__item grid__item--141"></div>
+                  <div class="grid__item grid__item--142"></div>
+                  <div class="grid__item grid__item--143"></div>
+                  <div class="grid__item grid__item--144"></div>
+                  <div class="grid__item grid__item--145"></div>
+                  <div class="grid__item grid__item--146"></div>
+                  <div class="grid__item grid__item--147"></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </aside>
-    </main>
-    <footer>
-      <p>2023 by Kostas Šliažas</p>
-    </footer>
-    <a href="#top" id="totop">Back to top</a>
-  </div>
-  <script src="js/script.min.js" defer></script>
-</body>
-
+        </aside>
+      </main>
+      <footer>
+        <p>2023 by Kostas Šliažas</p>
+      </footer>
+      <a href="#top" id="totop">Back to top</a>
+    </div>
+    <script src="js/script.min.js" defer></script>
+  </body>
 </html>

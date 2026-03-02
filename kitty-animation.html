@@ -1,57 +1,65 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="CSS animations" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CSS animations</title>
+    <link rel="stylesheet" href="css/main.min.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="CSS animations">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>CSS animations</title>
-  <link rel="stylesheet" href="css/main.min.css">
-  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-  <link rel="manifest" href="site.webmanifest">
-</head>
-
-<body>
-  <div id="loader" aria-hidden="true">Loading...</div>
-  <input type="checkbox" id="theme" aria-label="theme" title="Theme">
-  <label for="theme" id="theme-label">Theme</label>
-  <!--[if lt IE 8]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+  <body>
+    <div id="loader" aria-hidden="true">Loading...</div>
+    <input type="checkbox" id="theme" aria-label="theme" title="Theme" />
+    <label for="theme" id="theme-label">Theme</label>
+    <!--[if lt IE 8]>
+      <p class="browsehappy">
+        You are using an
+        <strong>outdated</strong>
+        browser. Please
+        <a href="#">upgrade your browser</a>
+        to improve your experience.
+      </p>
     <![endif]-->
-  <div id="wrapper">
-    <a id="top"></a>
-    <header id="header">
-      <a href="/"><span>daug.eu</span><span id="logo"></span></a>
-    </header>
-    <button class="toggle-btn" id="menu">menu</button>
-    <div class="nav">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="tetris-animation.html">tetris animation</a></li>
-        <li><a href="spining-dots-animation.html">spinning dots animation</a></li>
-        <li><a href="loader3d-animation.html">loader3d animation</a></li>
-        <li><a href="lithuania-animation.html">lithuania animation</a></li>
-        <li><a href="cassette-animation.html">cassette animation</a></li>
-        <li><a href="box3d-animation.html">box3d animation</a></li>
-        <li><a href="scale-animation.html">scale animation</a></li>
-        <li><a href="numbers-animation.html">numbers animation</a></li>
-        <li><a href="loader-animation.html">loader animation</a></li>
-        <li><a href="data-title-animation.html">data attribute animation</a></li>
-        <li><a href="speaker-animation.html">speaker animation</a></li>
-        <li><a href="kitty-animation.html">kitty animation</a></li>
-        <li><a href="digital-text-animation.html">digital text animation</a></li>
-      </ul>
-    </div>
-    <main class="container">
-      <article>
-        <h1 class="title">kitty animation</h1>
-        <div class="block">
-          <h2>HTML</h2>
-          <div class="box code">
-            <pre>
+    <div id="wrapper">
+      <a id="top"></a>
+      <header id="header">
+        <a href="/">
+          <span>daug.eu</span>
+          <span id="logo"></span>
+        </a>
+      </header>
+      <button class="toggle-btn" id="menu">menu</button>
+      <div class="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="tetris-animation.html">tetris animation</a></li>
+          <li><a href="spining-dots-animation.html">spinning dots animation</a></li>
+          <li><a href="loader3d-animation.html">loader3d animation</a></li>
+          <li><a href="lithuania-animation.html">lithuania animation</a></li>
+          <li><a href="cassette-animation.html">cassette animation</a></li>
+          <li><a href="box3d-animation.html">box3d animation</a></li>
+          <li><a href="scale-animation.html">scale animation</a></li>
+          <li><a href="numbers-animation.html">numbers animation</a></li>
+          <li><a href="loader-animation.html">loader animation</a></li>
+          <li><a href="data-title-animation.html">data attribute animation</a></li>
+          <li><a href="speaker-animation.html">speaker animation</a></li>
+          <li><a href="kitty-animation.html">kitty animation</a></li>
+          <li><a href="digital-text-animation.html">digital text animation</a></li>
+        </ul>
+      </div>
+      <main class="container">
+        <article>
+          <h1 class="title">kitty animation</h1>
+          <div class="block">
+            <h2>HTML</h2>
+            <div class="box code">
+              <pre>
  &lt;div class=&quot;classgrid&quot;&gt;
     &lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i
       class=&quot;sel s21 bla&quot;&gt;&lt;/i&gt;&lt;i class=&quot;sel s22 bla&quot;&gt;&lt;/i&gt;&lt;i class=&quot;sel s23 bla&quot;&gt;&lt;/i&gt;&lt;i class=&quot;sel s24 gre&quot;&gt;&lt;/i&gt;&lt;i
@@ -238,13 +246,14 @@
       class=&quot;sel s815 bla&quot;&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i
       class=&quot;sel s825 bla&quot;&gt;&lt;/i&gt;&lt;i class=&quot;sel s826 bla&quot;&gt;&lt;/i&gt;&lt;i class=&quot;sel s827 bla&quot;&gt;&lt;/i&gt;&lt;i
       class=&quot;sel s828 bla&quot;&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;
-  &lt;/div&gt;</pre>
+  &lt;/div&gt;</pre
+              >
+            </div>
           </div>
-        </div>
-        <div class="block">
-          <h2>CSS</h2>
-          <div class="box code">
-            <pre>
+          <div class="block">
+            <h2>CSS</h2>
+            <div class="box code">
+              <pre>
 .classgrid {
   position: absolute;
   top: 50%;
@@ -2996,26 +3005,897 @@
 
 .s730 {
   animation-delay: 33.05s;
-}</pre>
+}</pre
+              >
+            </div>
           </div>
-        </div>
-      </article>
-      <aside>
-        <div class="block">
-          <h2>Animation</h2>
+        </article>
+        <aside>
           <div class="block">
-            <div class="classgrid"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="sel s21 bla"></i><i class="sel s22 bla"></i><i class="sel s23 bla"></i><i class="sel s24 gre"></i><i class="sel s25 bla"></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="sel s32 bla"></i><i class="sel s33 bla"></i><i class="sel s34 bla"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="sel s49 bla"></i><i class="sel s50 bla"></i><i class="sel s51 bla"></i><i class="sel s52 bla"></i><i class="sel s53 gre"></i><i class="sel s54 gre"></i><i class="sel s55 bla"></i><i></i><i></i><i></i><i></i><i class="sel s60 bla"></i><i class="sel s61 blu"></i><i class="sel s62 blu"></i><i class="sel s63 blu"></i><i class="sel s64 bla"></i><i class="sel s65 bla"></i><i class="sel s66 bla"></i><i class="sel s67 bla"></i><i class="sel s68 bla"></i><i class="sel s69 bla"></i><i></i><i></i><i></i><i></i><i class="sel s74 bla"></i><i class="sel s75 bla"></i><i class="sel s76 bla"></i><i class="sel s77 bla"></i><i class="sel s78 bla"></i><i class="sel s79 bla"></i><i class="sel s80 bla"></i><i class="sel s81 bla"></i><i class="sel s82 gre"></i><i class="sel s83 gre"></i><i class="sel s84 bla"></i><i></i><i></i><i></i><i></i><i class="sel s89 bla"></i><i class="sel s90 blu"></i><i class="sel s91 blu"></i><i class="sel s92 blu"></i><i class="sel s93 bla"></i><i class="sel s94 bla"></i><i class="sel s95 gre"></i><i class="sel s96 gre"></i><i class="sel s97 gre"></i><i class="sel s98 bla"></i><i class="sel s99 bla"></i><i class="sel s100 bla"></i><i class="sel s101 bla"></i><i class="sel s102 bla"></i><i class="sel s103 gre"></i><i class="sel s104 gre"></i><i class="sel s105 gre"></i><i class="sel s106 gre"></i><i class="sel s107 gre"></i><i class="sel s108 gre"></i><i class="sel s109 bla"></i><i class="sel s110 bla"></i><i class="sel s111 bla"></i><i class="sel s112 gre"></i><i class="sel s113 bla"></i><i></i><i></i><i></i><i class="sel s117 bla"></i><i class="sel s118 blu"></i><i class="sel s119 bla"></i><i class="sel s120 blu"></i><i class="sel s121 blu"></i><i class="sel s122 bla"></i><i class="sel s123 bla"></i><i class="sel s124 gre"></i><i class="sel s125 gre"></i><i class="sel s126 bla"></i><i class="sel s127 bla"></i><i class="sel s128 gre"></i><i class="sel s129 gre"></i><i class="sel s130 blu"></i><i class="sel s131 gre"></i><i class="sel s132 gre"></i><i class="sel s133 gre"></i><i class="sel s134 gre"></i><i class="sel s135 blu"></i><i class="sel s136 gre"></i><i class="sel s137 gre"></i><i class="sel s138 gre"></i><i class="sel s139 bla"></i><i class="sel s140 bla"></i><i class="sel s141 gre"></i><i class="sel s142 bla"></i><i></i><i></i><i></i><i class="sel s146 bla"></i><i class="sel s147 blu"></i><i class="sel s148 blu"></i><i class="sel s149 blu"></i><i class="sel s150 bla"></i><i class="sel s151 bla"></i><i class="sel s152 bla"></i><i class="sel s153 gre"></i><i class="sel s154 bla"></i><i class="sel s155 bla"></i><i class="sel s156 bla"></i><i class="sel s157 bla"></i><i class="sel s158 gre"></i><i class="sel s159 gre"></i><i class="sel s160 blu"></i><i class="sel s161 gre"></i><i class="sel s162 gre"></i><i class="sel s163 blu"></i><i class="sel s164 blu"></i><i class="sel s165 blu"></i><i class="sel s166 gre"></i><i class="sel s167 blu"></i><i class="sel s168 blu"></i><i class="sel s169 bla"></i><i class="sel s170 bla"></i><i class="sel s171 bla"></i><i></i><i></i><i class="sel s174 bla"></i><i class="sel s175 blu"></i><i class="sel s176 blu"></i><i class="sel s177 blu"></i><i class="sel s178 blu"></i><i class="sel s179 bla"></i><i class="sel s180 bla"></i><i class="sel s181 bla"></i><i class="sel s182 gre"></i><i class="sel s183 red"></i><i class="sel s184 red"></i><i class="sel s185 bla"></i><i class="sel s186 bla"></i><i class="sel s187 bla"></i><i class="sel s188 gre"></i><i class="sel s189 blu"></i><i class="sel s190 blu"></i><i class="sel s191 gre"></i><i class="sel s192 gre"></i><i class="sel s193 blu"></i><i class="sel s194 blu"></i><i class="sel s195 gre"></i><i class="sel s196 blu"></i><i class="sel s197 blu"></i><i class="sel s198 blu"></i><i class="sel s199 bla"></i><i class="sel s200 bla"></i><i></i><i></i><i class="sel s203 bla"></i><i class="sel s204 blu"></i><i class="sel s205 blu"></i><i class="sel s206 blu"></i><i class="sel s207 bla"></i><i class="sel s208 yel"></i><i class="sel s209 yel"></i><i class="sel s210 bla"></i><i class="sel s211 bla"></i><i class="sel s212 red"></i><i class="sel s213 red"></i><i class="sel s214 red"></i><i class="sel s215 bla"></i><i class="sel s216 bla"></i><i class="sel s217 bla"></i><i class="sel s218 blu"></i><i class="sel s219 blu"></i><i class="sel s220 blu"></i><i class="sel s221 gre"></i><i class="sel s222 blu"></i><i class="sel s223 blu"></i><i class="sel s224 blu"></i><i class="sel s225 blu"></i><i class="sel s226 blu"></i><i class="sel s227 blu"></i><i class="sel s228 bla"></i><i class="sel s229 bla"></i><i></i><i></i><i class="sel s232 bla"></i><i class="sel s233 blu"></i><i class="sel s234 blu"></i><i class="sel s235 blu"></i><i class="sel s236 bla"></i><i class="sel s237 yel"></i><i class="sel s238 yel"></i><i class="sel s239 bla"></i><i class="sel s240 bla"></i><i class="sel s241 red"></i><i class="sel s242 red"></i><i class="sel s243 red"></i><i class="sel s244 red"></i><i class="sel s245 bla"></i><i class="sel s246 bla"></i><i class="sel s247 blu"></i><i class="sel s248 blu"></i><i class="sel s249 blu"></i><i class="sel s250 blu"></i><i class="sel s251 blu"></i><i class="sel s252 blu"></i><i class="sel s253 blu"></i><i class="sel s254 blu"></i><i class="sel s255 blu"></i><i class="sel s256 bla"></i><i class="sel s257 bla"></i><i class="sel s258 bla"></i><i></i><i></i><i class="sel s261 bla"></i><i class="sel s262 blu"></i><i class="sel s263 blu"></i><i class="sel s264 blu"></i><i class="sel s265 bla"></i><i class="sel s266 yel"></i><i class="sel s267 yel"></i><i class="sel s268 yel"></i><i class="sel s269 bla"></i><i class="sel s270 bla"></i><i class="sel s271 red"></i><i class="sel s272 red"></i><i class="sel s273 red"></i><i class="sel s274 bla"></i><i class="sel s275 bla"></i><i class="sel s276 blu"></i><i class="sel s277 blu"></i><i class="sel s278 blu"></i><i class="sel s279 blu"></i><i class="sel s280 blu"></i><i class="sel s281 blu"></i><i class="sel s282 blu"></i><i class="sel s283 blu"></i><i class="sel s284 bla"></i><i class="sel s285 bla"></i><i class="sel s286 bla"></i><i class="sel s287 bla"></i><i></i><i></i><i class="sel s290 bla"></i><i class="sel s291 blu"></i><i class="sel s292 blu"></i><i class="sel s293 blu"></i><i class="sel s294 bla"></i><i class="sel s295 yel"></i><i class="sel s296 yel"></i><i class="sel s297 yel"></i><i class="sel s298 bla"></i><i class="sel s299 bla"></i><i class="sel s300 bla"></i><i class="sel s301 red"></i><i class="sel s302 bla"></i><i class="sel s303 bla"></i><i class="sel s304 bla"></i><i class="sel s305 blu"></i><i class="sel s306 blu"></i><i class="sel s307 blu"></i><i class="sel s308 blu"></i><i class="sel s309 blu"></i><i class="sel s310 blu"></i><i class="sel s311 blu"></i><i class="sel s312 blu"></i><i class="sel s313 bla"></i><i class="sel s314 bla"></i><i class="sel s315 yel"></i><i class="sel s316 bla"></i><i></i><i></i><i class="sel s319 bla"></i><i class="sel s320 blu"></i><i class="sel s321 blu"></i><i class="sel s322 blu"></i><i class="sel s323 bla"></i><i class="sel s324 yel"></i><i class="sel s325 yel"></i><i class="sel s326 yel"></i><i class="sel s327 yel"></i><i class="sel s328 bla"></i><i class="sel s329 bla"></i><i class="sel s330 bla"></i><i class="sel s331 bla"></i><i class="sel s332 yel"></i><i class="sel s333 yel"></i><i class="sel s334 bla"></i><i class="sel s335 bla"></i><i class="sel s336 bla"></i><i class="sel s337 yel"></i><i class="sel s338 blu"></i><i class="sel s339 blu"></i><i class="sel s340 blu"></i><i class="sel s341 blu"></i><i class="sel s342 yel"></i><i class="sel s343 bla"></i><i class="sel s344 yel"></i><i class="sel s345 bla"></i><i></i><i></i><i class="sel s348 bla"></i><i class="sel s349 blu"></i><i class="sel s350 yel"></i><i class="sel s351 yel"></i><i class="sel s352 yel"></i><i class="sel s353 bla"></i><i class="sel s354 yel"></i><i class="sel s355 yel"></i><i class="sel s356 yel"></i><i class="sel s357 bla"></i><i class="sel s358 blu"></i><i class="sel s359 blu"></i><i class="sel s360 blu"></i><i class="sel s361 yel"></i><i class="sel s362 bla"></i><i class="sel s363 bla"></i><i class="sel s364 bla"></i><i class="sel s365 bla"></i><i class="sel s366 bla"></i><i class="sel s367 yel"></i><i class="sel s368 yel"></i><i class="sel s369 yel"></i><i class="sel s370 yel"></i><i class="sel s371 bla"></i><i class="sel s372 bla"></i><i class="sel s373 yel"></i><i class="sel s374 bla"></i><i class="sel s375 bla"></i><i class="sel s376 bla"></i><i class="sel s377 bla"></i><i class="sel s378 yel"></i><i class="sel s379 yel"></i><i class="sel s380 blu"></i><i class="sel s381 blu"></i><i class="sel s382 blu"></i><i class="sel s383 bla"></i><i class="sel s384 bla"></i><i class="sel s385 bla"></i><i class="sel s386 bla"></i><i class="sel s387 blu"></i><i class="sel s388 blu"></i><i class="sel s389 yel"></i><i class="sel s390 yel"></i><i class="sel s391 bla"></i><i class="sel s392 whi"></i><i class="sel s393 bla"></i><i class="sel s394 bla"></i><i class="sel s395 bla"></i><i class="sel s396 yel"></i><i class="sel s397 yel"></i><i class="sel s398 yel"></i><i class="sel s399 yel"></i><i class="sel s400 blu"></i><i class="sel s401 blu"></i><i class="sel s402 yel"></i><i class="sel s403 yel"></i><i class="sel s404 blu"></i><i></i><i></i><i class="sel s407 bla"></i><i class="sel s408 blu"></i><i class="sel s409 blu"></i><i class="sel s410 blu"></i><i class="sel s411 bla"></i><i class="sel s412 bla"></i><i class="sel s413 blu"></i><i class="sel s414 yel"></i><i class="sel s415 bla"></i><i class="sel s416 yel"></i><i class="sel s417 yel"></i><i class="sel s418 yel"></i><i class="sel s419 yel"></i><i class="sel s420 whi"></i><i class="sel s421 whi"></i><i class="sel s422 whi"></i><i class="sel s423 bla"></i><i class="sel s424 bla"></i><i class="sel s425 yel"></i><i class="sel s426 yel"></i><i class="sel s427 yel"></i><i class="sel s428 yel"></i><i class="sel s429 yel"></i><i class="sel s430 yel"></i><i class="sel s431 bla"></i><i class="sel s432 bla"></i><i class="sel s433 bla"></i><i class="sel s434 bla"></i><i></i><i class="sel s436 bla"></i><i class="sel s437 blu"></i><i class="sel s438 blu"></i><i class="sel s439 bla"></i><i class="sel s440 blu"></i><i class="sel s441 blu"></i><i class="sel s442 yel"></i><i class="sel s443 yel"></i><i class="sel s444 bla"></i><i class="sel s445 blu"></i><i class="sel s446 blu"></i><i class="sel s447 blu"></i><i class="sel s448 yel"></i><i class="sel s449 yel"></i><i class="sel s450 yel"></i><i class="sel s451 bla"></i><i class="sel s452 bla"></i><i class="sel s453 bla"></i><i class="sel s454 yel"></i><i class="sel s455 yel"></i><i class="sel s456 blu"></i><i class="sel s457 blu"></i><i class="sel s458 yel"></i><i class="sel s459 yel"></i><i class="sel s460 yel"></i><i class="sel s461 bla"></i><i></i><i></i><i></i><i></i><i class="sel s466 bla"></i><i class="sel s467 bla"></i><i class="sel s468 blu"></i><i class="sel s469 blu"></i><i class="sel s470 yel"></i><i class="sel s471 yel"></i><i class="sel s472 blu"></i><i class="sel s473 blu"></i><i class="sel s474 blu"></i><i class="sel s475 yel"></i><i class="sel s476 blu"></i><i class="sel s477 blu"></i><i class="sel s478 yel"></i><i class="sel s479 yel"></i><i class="sel s480 bla"></i><i class="sel s481 bla"></i><i class="sel s482 yel"></i><i class="sel s483 yel"></i><i class="sel s484 yel"></i><i class="sel s485 bla"></i><i class="sel s486 bla"></i><i class="sel s487 yel"></i><i class="sel s488 yel"></i><i class="sel s489 bla"></i><i class="sel s490 bla"></i><i></i><i></i><i></i><i></i><i class="sel s495 bla"></i><i class="sel s496 blu"></i><i class="sel s497 blu"></i><i class="sel s498 yel"></i><i class="sel s499 yel"></i><i class="sel s500 blu"></i><i class="sel s501 blu"></i><i class="sel s502 yel"></i><i class="sel s503 yel"></i><i class="sel s504 yel"></i><i class="sel s505 yel"></i><i class="sel s506 yel"></i><i class="sel s507 yel"></i><i class="sel s508 yel"></i><i class="sel s509 yel"></i><i class="sel s510 yel"></i><i class="sel s511 yel"></i><i class="sel s512 yel"></i><i class="sel s513 yel"></i><i class="sel s514 yel"></i><i class="sel s515 yel"></i><i class="sel s516 yel"></i><i class="sel s517 bla"></i><i class="sel s518 bla"></i><i></i><i></i><i></i><i></i><i class="sel s523 bla"></i><i class="sel s524 blu"></i><i class="sel s525 yel"></i><i class="sel s526 yel"></i><i class="sel s527 yel"></i><i class="sel s528 yel"></i><i class="sel s529 blu"></i><i class="sel s530 blu"></i><i class="sel s531 yel"></i><i class="sel s532 yel"></i><i class="sel s533 yel"></i><i class="sel s534 yel"></i><i class="sel s535 blu"></i><i class="sel s536 blu"></i><i class="sel s537 blu"></i><i class="sel s538 yel"></i><i class="sel s539 yel"></i><i class="sel s540 yel"></i><i class="sel s541 yel"></i><i class="sel s542 yel"></i><i class="sel s543 yel"></i><i class="sel s544 yel"></i><i class="sel s545 bla"></i><i class="sel s546 bla"></i><i></i><i></i><i></i><i></i><i></i><i class="sel s552 bla"></i><i class="sel s553 blu"></i><i class="sel s554 yel"></i><i class="sel s555 yel"></i><i class="sel s556 yel"></i><i class="sel s557 yel"></i><i class="sel s558 blu"></i><i class="sel s559 yel"></i><i class="sel s560 yel"></i><i class="sel s561 yel"></i><i class="sel s562 blu"></i><i class="sel s563 yel"></i><i class="sel s564 yel"></i><i class="sel s565 yel"></i><i class="sel s566 yel"></i><i class="sel s567 yel"></i><i class="sel s568 yel"></i><i class="sel s569 yel"></i><i class="sel s570 yel"></i><i class="sel s571 yel"></i><i class="sel s572 bla"></i><i class="sel s573 bla"></i><i class="sel s574 bla"></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="sel s581 bla"></i><i class="sel s582 blu"></i><i class="sel s583 blu"></i><i class="sel s584 yel"></i><i class="sel s585 yel"></i><i class="sel s586 yel"></i><i class="sel s587 blu"></i><i class="sel s588 yel"></i><i class="sel s589 yel"></i><i class="sel s590 yel"></i><i class="sel s591 blu"></i><i class="sel s592 yel"></i><i class="sel s593 blu"></i><i class="sel s594 yel"></i><i class="sel s595 yel"></i><i class="sel s596 yel"></i><i class="sel s597 yel"></i><i class="sel s598 yel"></i><i class="sel s599 yel"></i><i class="sel s600 blu"></i><i class="sel s601 blu"></i><i class="sel s602 bla"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="sel s610 bla"></i><i class="sel s611 blu"></i><i class="sel s612 blu"></i><i class="sel s613 yel"></i><i class="sel s614 yel"></i><i class="sel s615 yel"></i><i class="sel s616 blu"></i><i class="sel s617 yel"></i><i class="sel s618 yel"></i><i class="sel s619 yel"></i><i class="sel s620 yel"></i><i class="sel s621 yel"></i><i class="sel s622 blu"></i><i class="sel s623 blu"></i><i class="sel s624 yel"></i><i class="sel s625 yel"></i><i class="sel s626 yel"></i><i class="sel s627 yel"></i><i class="sel s628 blu"></i><i class="sel s629 blu"></i><i class="sel s630 blu"></i><i class="sel s631 yel"></i><i class="sel s632 bla"></i><i></i><i></i><i></i><i></i><i></i><i class="sel s638 bla"></i><i class="sel s639 blu"></i><i class="sel s640 blu"></i><i class="sel s641 blu"></i><i class="sel s642 blu"></i><i class="sel s643 yel"></i><i class="sel s644 yel"></i><i class="sel s645 whi"></i><i class="sel s646 whi"></i><i class="sel s647 yel"></i><i class="sel s648 yel"></i><i class="sel s649 yel"></i><i class="sel s650 yel"></i><i class="sel s651 yel"></i><i class="sel s652 blu"></i><i class="sel s653 bla"></i><i class="sel s654 yel"></i><i class="sel s655 yel"></i><i class="sel s656 bla"></i><i class="sel s657 yel"></i><i class="sel s658 yel"></i><i class="sel s659 yel"></i><i class="sel s660 yel"></i><i class="sel s661 bla"></i><i></i><i></i><i></i><i></i><i></i><i class="sel s667 bla"></i><i class="sel s668 blu"></i><i class="sel s669 blu"></i><i class="sel s670 yel"></i><i class="sel s671 yel"></i><i class="sel s672 yel"></i><i class="sel s673 yel"></i><i class="sel s674 whi"></i><i class="sel s675 whi"></i><i class="sel s676 whi"></i><i class="sel s677 yel"></i><i class="sel s678 yel"></i><i class="sel s679 yel"></i><i class="sel s680 yel"></i><i class="sel s681 yel"></i><i class="sel s682 bla"></i><i class="sel s683 yel"></i><i class="sel s684 yel"></i><i class="sel s685 bla"></i><i class="sel s686 whi"></i><i class="sel s687 whi"></i><i class="sel s688 whi"></i><i class="sel s689 whi"></i><i class="sel s690 yel"></i><i class="sel s691 bla"></i><i></i><i></i><i></i><i></i><i class="sel s696 bla"></i><i class="sel s697 whi"></i><i class="sel s698 yel"></i><i class="sel s699 yel"></i><i class="sel s700 yel"></i><i class="sel s701 yel"></i><i class="sel s702 yel"></i><i class="sel s703 whi"></i><i class="sel s704 whi"></i><i class="sel s705 bla"></i><i class="sel s706 bla"></i><i class="sel s707 bla"></i><i class="sel s708 yel"></i><i class="sel s709 yel"></i><i class="sel s710 yel"></i><i class="sel s711 bla"></i><i class="sel s712 bla"></i><i class="sel s713 bla"></i><i class="sel s714 bla"></i><i class="sel s715 whi"></i><i class="sel s716 whi"></i><i class="sel s717 whi"></i><i class="sel s718 whi"></i><i class="sel s719 whi"></i><i class="sel s720 bla"></i><i></i><i></i><i></i><i></i><i class="sel s725 bla"></i><i class="sel s726 whi"></i><i class="sel s727 whi"></i><i class="sel s728 whi"></i><i class="sel s729 whi"></i><i class="sel s730 yel"></i><i class="sel s731 bla"></i><i class="sel s732 bla"></i><i class="sel s733 bla"></i><i></i><i></i><i class="sel s736 bla"></i><i class="sel s737 whi"></i><i class="sel s738 whi"></i><i class="sel s739 whi"></i><i class="sel s740 whi"></i><i class="sel s741 bla"></i><i></i><i></i><i class="sel s744 bla"></i><i class="sel s745 whi"></i><i class="sel s746 whi"></i><i class="sel s747 whi"></i><i class="sel s748 whi"></i><i class="sel s749 bla"></i><i></i><i></i><i></i><i></i><i class="sel s754 bla"></i><i class="sel s755 whi"></i><i class="sel s756 whi"></i><i class="sel s757 whi"></i><i class="sel s758 whi"></i><i class="sel s759 bla"></i><i class="sel s760 bla"></i><i class="sel s761 bla"></i><i></i><i></i><i></i><i class="sel s765 bla"></i><i class="sel s766 bla"></i><i class="sel s767 whi"></i><i class="sel s768 whi"></i><i class="sel s769 whi"></i><i class="sel s770 whi"></i><i class="sel s771 bla"></i><i></i><i class="sel s773 bla"></i><i class="sel s774 bla"></i><i class="sel s775 bla"></i><i class="sel s776 whi"></i><i class="sel s777 whi"></i><i class="sel s778 bla"></i><i></i><i></i><i></i><i></i><i class="sel s783 bla"></i><i class="sel s784 whi"></i><i class="sel s785 whi"></i><i class="sel s786 whi"></i><i class="sel s787 bla"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="sel s795 bla"></i><i class="sel s796 whi"></i><i class="sel s797 whi"></i><i class="sel s798 whi"></i><i class="sel s799 whi"></i><i class="sel s800 bla"></i><i></i><i></i><i class="sel s803 bla"></i><i class="sel s804 bla"></i><i class="sel s805 bla"></i><i class="sel s806 bla"></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="sel s813 bla"></i><i class="sel s814 bla"></i><i class="sel s815 bla"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="sel s825 bla"></i><i class="sel s826 bla"></i><i class="sel s827 bla"></i><i class="sel s828 bla"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            <h2>Animation</h2>
+            <div class="block">
+              <div class="classgrid">
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i class="sel s21 bla"></i>
+                <i class="sel s22 bla"></i>
+                <i class="sel s23 bla"></i>
+                <i class="sel s24 gre"></i>
+                <i class="sel s25 bla"></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i class="sel s32 bla"></i>
+                <i class="sel s33 bla"></i>
+                <i class="sel s34 bla"></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i class="sel s49 bla"></i>
+                <i class="sel s50 bla"></i>
+                <i class="sel s51 bla"></i>
+                <i class="sel s52 bla"></i>
+                <i class="sel s53 gre"></i>
+                <i class="sel s54 gre"></i>
+                <i class="sel s55 bla"></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i class="sel s60 bla"></i>
+                <i class="sel s61 blu"></i>
+                <i class="sel s62 blu"></i>
+                <i class="sel s63 blu"></i>
+                <i class="sel s64 bla"></i>
+                <i class="sel s65 bla"></i>
+                <i class="sel s66 bla"></i>
+                <i class="sel s67 bla"></i>
+                <i class="sel s68 bla"></i>
+                <i class="sel s69 bla"></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i class="sel s74 bla"></i>
+                <i class="sel s75 bla"></i>
+                <i class="sel s76 bla"></i>
+                <i class="sel s77 bla"></i>
+                <i class="sel s78 bla"></i>
+                <i class="sel s79 bla"></i>
+                <i class="sel s80 bla"></i>
+                <i class="sel s81 bla"></i>
+                <i class="sel s82 gre"></i>
+                <i class="sel s83 gre"></i>
+                <i class="sel s84 bla"></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i class="sel s89 bla"></i>
+                <i class="sel s90 blu"></i>
+                <i class="sel s91 blu"></i>
+                <i class="sel s92 blu"></i>
+                <i class="sel s93 bla"></i>
+                <i class="sel s94 bla"></i>
+                <i class="sel s95 gre"></i>
+                <i class="sel s96 gre"></i>
+                <i class="sel s97 gre"></i>
+                <i class="sel s98 bla"></i>
+                <i class="sel s99 bla"></i>
+                <i class="sel s100 bla"></i>
+                <i class="sel s101 bla"></i>
+                <i class="sel s102 bla"></i>
+                <i class="sel s103 gre"></i>
+                <i class="sel s104 gre"></i>
+                <i class="sel s105 gre"></i>
+                <i class="sel s106 gre"></i>
+                <i class="sel s107 gre"></i>
+                <i class="sel s108 gre"></i>
+                <i class="sel s109 bla"></i>
+                <i class="sel s110 bla"></i>
+                <i class="sel s111 bla"></i>
+                <i class="sel s112 gre"></i>
+                <i class="sel s113 bla"></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i class="sel s117 bla"></i>
+                <i class="sel s118 blu"></i>
+                <i class="sel s119 bla"></i>
+                <i class="sel s120 blu"></i>
+                <i class="sel s121 blu"></i>
+                <i class="sel s122 bla"></i>
+                <i class="sel s123 bla"></i>
+                <i class="sel s124 gre"></i>
+                <i class="sel s125 gre"></i>
+                <i class="sel s126 bla"></i>
+                <i class="sel s127 bla"></i>
+                <i class="sel s128 gre"></i>
+                <i class="sel s129 gre"></i>
+                <i class="sel s130 blu"></i>
+                <i class="sel s131 gre"></i>
+                <i class="sel s132 gre"></i>
+                <i class="sel s133 gre"></i>
+                <i class="sel s134 gre"></i>
+                <i class="sel s135 blu"></i>
+                <i class="sel s136 gre"></i>
+                <i class="sel s137 gre"></i>
+                <i class="sel s138 gre"></i>
+                <i class="sel s139 bla"></i>
+                <i class="sel s140 bla"></i>
+                <i class="sel s141 gre"></i>
+                <i class="sel s142 bla"></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i class="sel s146 bla"></i>
+                <i class="sel s147 blu"></i>
+                <i class="sel s148 blu"></i>
+                <i class="sel s149 blu"></i>
+                <i class="sel s150 bla"></i>
+                <i class="sel s151 bla"></i>
+                <i class="sel s152 bla"></i>
+                <i class="sel s153 gre"></i>
+                <i class="sel s154 bla"></i>
+                <i class="sel s155 bla"></i>
+                <i class="sel s156 bla"></i>
+                <i class="sel s157 bla"></i>
+                <i class="sel s158 gre"></i>
+                <i class="sel s159 gre"></i>
+                <i class="sel s160 blu"></i>
+                <i class="sel s161 gre"></i>
+                <i class="sel s162 gre"></i>
+                <i class="sel s163 blu"></i>
+                <i class="sel s164 blu"></i>
+                <i class="sel s165 blu"></i>
+                <i class="sel s166 gre"></i>
+                <i class="sel s167 blu"></i>
+                <i class="sel s168 blu"></i>
+                <i class="sel s169 bla"></i>
+                <i class="sel s170 bla"></i>
+                <i class="sel s171 bla"></i>
+                <i></i>
+                <i></i>
+                <i class="sel s174 bla"></i>
+                <i class="sel s175 blu"></i>
+                <i class="sel s176 blu"></i>
+                <i class="sel s177 blu"></i>
+                <i class="sel s178 blu"></i>
+                <i class="sel s179 bla"></i>
+                <i class="sel s180 bla"></i>
+                <i class="sel s181 bla"></i>
+                <i class="sel s182 gre"></i>
+                <i class="sel s183 red"></i>
+                <i class="sel s184 red"></i>
+                <i class="sel s185 bla"></i>
+                <i class="sel s186 bla"></i>
+                <i class="sel s187 bla"></i>
+                <i class="sel s188 gre"></i>
+                <i class="sel s189 blu"></i>
+                <i class="sel s190 blu"></i>
+                <i class="sel s191 gre"></i>
+                <i class="sel s192 gre"></i>
+                <i class="sel s193 blu"></i>
+                <i class="sel s194 blu"></i>
+                <i class="sel s195 gre"></i>
+                <i class="sel s196 blu"></i>
+                <i class="sel s197 blu"></i>
+                <i class="sel s198 blu"></i>
+                <i class="sel s199 bla"></i>
+                <i class="sel s200 bla"></i>
+                <i></i>
+                <i></i>
+                <i class="sel s203 bla"></i>
+                <i class="sel s204 blu"></i>
+                <i class="sel s205 blu"></i>
+                <i class="sel s206 blu"></i>
+                <i class="sel s207 bla"></i>
+                <i class="sel s208 yel"></i>
+                <i class="sel s209 yel"></i>
+                <i class="sel s210 bla"></i>
+                <i class="sel s211 bla"></i>
+                <i class="sel s212 red"></i>
+                <i class="sel s213 red"></i>
+                <i class="sel s214 red"></i>
+                <i class="sel s215 bla"></i>
+                <i class="sel s216 bla"></i>
+                <i class="sel s217 bla"></i>
+                <i class="sel s218 blu"></i>
+                <i class="sel s219 blu"></i>
+                <i class="sel s220 blu"></i>
+                <i class="sel s221 gre"></i>
+                <i class="sel s222 blu"></i>
+                <i class="sel s223 blu"></i>
+                <i class="sel s224 blu"></i>
+                <i class="sel s225 blu"></i>
+                <i class="sel s226 blu"></i>
+                <i class="sel s227 blu"></i>
+                <i class="sel s228 bla"></i>
+                <i class="sel s229 bla"></i>
+                <i></i>
+                <i></i>
+                <i class="sel s232 bla"></i>
+                <i class="sel s233 blu"></i>
+                <i class="sel s234 blu"></i>
+                <i class="sel s235 blu"></i>
+                <i class="sel s236 bla"></i>
+                <i class="sel s237 yel"></i>
+                <i class="sel s238 yel"></i>
+                <i class="sel s239 bla"></i>
+                <i class="sel s240 bla"></i>
+                <i class="sel s241 red"></i>
+                <i class="sel s242 red"></i>
+                <i class="sel s243 red"></i>
+                <i class="sel s244 red"></i>
+                <i class="sel s245 bla"></i>
+                <i class="sel s246 bla"></i>
+                <i class="sel s247 blu"></i>
+                <i class="sel s248 blu"></i>
+                <i class="sel s249 blu"></i>
+                <i class="sel s250 blu"></i>
+                <i class="sel s251 blu"></i>
+                <i class="sel s252 blu"></i>
+                <i class="sel s253 blu"></i>
+                <i class="sel s254 blu"></i>
+                <i class="sel s255 blu"></i>
+                <i class="sel s256 bla"></i>
+                <i class="sel s257 bla"></i>
+                <i class="sel s258 bla"></i>
+                <i></i>
+                <i></i>
+                <i class="sel s261 bla"></i>
+                <i class="sel s262 blu"></i>
+                <i class="sel s263 blu"></i>
+                <i class="sel s264 blu"></i>
+                <i class="sel s265 bla"></i>
+                <i class="sel s266 yel"></i>
+                <i class="sel s267 yel"></i>
+                <i class="sel s268 yel"></i>
+                <i class="sel s269 bla"></i>
+                <i class="sel s270 bla"></i>
+                <i class="sel s271 red"></i>
+                <i class="sel s272 red"></i>
+                <i class="sel s273 red"></i>
+                <i class="sel s274 bla"></i>
+                <i class="sel s275 bla"></i>
+                <i class="sel s276 blu"></i>
+                <i class="sel s277 blu"></i>
+                <i class="sel s278 blu"></i>
+                <i class="sel s279 blu"></i>
+                <i class="sel s280 blu"></i>
+                <i class="sel s281 blu"></i>
+                <i class="sel s282 blu"></i>
+                <i class="sel s283 blu"></i>
+                <i class="sel s284 bla"></i>
+                <i class="sel s285 bla"></i>
+                <i class="sel s286 bla"></i>
+                <i class="sel s287 bla"></i>
+                <i></i>
+                <i></i>
+                <i class="sel s290 bla"></i>
+                <i class="sel s291 blu"></i>
+                <i class="sel s292 blu"></i>
+                <i class="sel s293 blu"></i>
+                <i class="sel s294 bla"></i>
+                <i class="sel s295 yel"></i>
+                <i class="sel s296 yel"></i>
+                <i class="sel s297 yel"></i>
+                <i class="sel s298 bla"></i>
+                <i class="sel s299 bla"></i>
+                <i class="sel s300 bla"></i>
+                <i class="sel s301 red"></i>
+                <i class="sel s302 bla"></i>
+                <i class="sel s303 bla"></i>
+                <i class="sel s304 bla"></i>
+                <i class="sel s305 blu"></i>
+                <i class="sel s306 blu"></i>
+                <i class="sel s307 blu"></i>
+                <i class="sel s308 blu"></i>
+                <i class="sel s309 blu"></i>
+                <i class="sel s310 blu"></i>
+                <i class="sel s311 blu"></i>
+                <i class="sel s312 blu"></i>
+                <i class="sel s313 bla"></i>
+                <i class="sel s314 bla"></i>
+                <i class="sel s315 yel"></i>
+                <i class="sel s316 bla"></i>
+                <i></i>
+                <i></i>
+                <i class="sel s319 bla"></i>
+                <i class="sel s320 blu"></i>
+                <i class="sel s321 blu"></i>
+                <i class="sel s322 blu"></i>
+                <i class="sel s323 bla"></i>
+                <i class="sel s324 yel"></i>
+                <i class="sel s325 yel"></i>
+                <i class="sel s326 yel"></i>
+                <i class="sel s327 yel"></i>
+                <i class="sel s328 bla"></i>
+                <i class="sel s329 bla"></i>
+                <i class="sel s330 bla"></i>
+                <i class="sel s331 bla"></i>
+                <i class="sel s332 yel"></i>
+                <i class="sel s333 yel"></i>
+                <i class="sel s334 bla"></i>
+                <i class="sel s335 bla"></i>
+                <i class="sel s336 bla"></i>
+                <i class="sel s337 yel"></i>
+                <i class="sel s338 blu"></i>
+                <i class="sel s339 blu"></i>
+                <i class="sel s340 blu"></i>
+                <i class="sel s341 blu"></i>
+                <i class="sel s342 yel"></i>
+                <i class="sel s343 bla"></i>
+                <i class="sel s344 yel"></i>
+                <i class="sel s345 bla"></i>
+                <i></i>
+                <i></i>
+                <i class="sel s348 bla"></i>
+                <i class="sel s349 blu"></i>
+                <i class="sel s350 yel"></i>
+                <i class="sel s351 yel"></i>
+                <i class="sel s352 yel"></i>
+                <i class="sel s353 bla"></i>
+                <i class="sel s354 yel"></i>
+                <i class="sel s355 yel"></i>
+                <i class="sel s356 yel"></i>
+                <i class="sel s357 bla"></i>
+                <i class="sel s358 blu"></i>
+                <i class="sel s359 blu"></i>
+                <i class="sel s360 blu"></i>
+                <i class="sel s361 yel"></i>
+                <i class="sel s362 bla"></i>
+                <i class="sel s363 bla"></i>
+                <i class="sel s364 bla"></i>
+                <i class="sel s365 bla"></i>
+                <i class="sel s366 bla"></i>
+                <i class="sel s367 yel"></i>
+                <i class="sel s368 yel"></i>
+                <i class="sel s369 yel"></i>
+                <i class="sel s370 yel"></i>
+                <i class="sel s371 bla"></i>
+                <i class="sel s372 bla"></i>
+                <i class="sel s373 yel"></i>
+                <i class="sel s374 bla"></i>
+                <i class="sel s375 bla"></i>
+                <i class="sel s376 bla"></i>
+                <i class="sel s377 bla"></i>
+                <i class="sel s378 yel"></i>
+                <i class="sel s379 yel"></i>
+                <i class="sel s380 blu"></i>
+                <i class="sel s381 blu"></i>
+                <i class="sel s382 blu"></i>
+                <i class="sel s383 bla"></i>
+                <i class="sel s384 bla"></i>
+                <i class="sel s385 bla"></i>
+                <i class="sel s386 bla"></i>
+                <i class="sel s387 blu"></i>
+                <i class="sel s388 blu"></i>
+                <i class="sel s389 yel"></i>
+                <i class="sel s390 yel"></i>
+                <i class="sel s391 bla"></i>
+                <i class="sel s392 whi"></i>
+                <i class="sel s393 bla"></i>
+                <i class="sel s394 bla"></i>
+                <i class="sel s395 bla"></i>
+                <i class="sel s396 yel"></i>
+                <i class="sel s397 yel"></i>
+                <i class="sel s398 yel"></i>
+                <i class="sel s399 yel"></i>
+                <i class="sel s400 blu"></i>
+                <i class="sel s401 blu"></i>
+                <i class="sel s402 yel"></i>
+                <i class="sel s403 yel"></i>
+                <i class="sel s404 blu"></i>
+                <i></i>
+                <i></i>
+                <i class="sel s407 bla"></i>
+                <i class="sel s408 blu"></i>
+                <i class="sel s409 blu"></i>
+                <i class="sel s410 blu"></i>
+                <i class="sel s411 bla"></i>
+                <i class="sel s412 bla"></i>
+                <i class="sel s413 blu"></i>
+                <i class="sel s414 yel"></i>
+                <i class="sel s415 bla"></i>
+                <i class="sel s416 yel"></i>
+                <i class="sel s417 yel"></i>
+                <i class="sel s418 yel"></i>
+                <i class="sel s419 yel"></i>
+                <i class="sel s420 whi"></i>
+                <i class="sel s421 whi"></i>
+                <i class="sel s422 whi"></i>
+                <i class="sel s423 bla"></i>
+                <i class="sel s424 bla"></i>
+                <i class="sel s425 yel"></i>
+                <i class="sel s426 yel"></i>
+                <i class="sel s427 yel"></i>
+                <i class="sel s428 yel"></i>
+                <i class="sel s429 yel"></i>
+                <i class="sel s430 yel"></i>
+                <i class="sel s431 bla"></i>
+                <i class="sel s432 bla"></i>
+                <i class="sel s433 bla"></i>
+                <i class="sel s434 bla"></i>
+                <i></i>
+                <i class="sel s436 bla"></i>
+                <i class="sel s437 blu"></i>
+                <i class="sel s438 blu"></i>
+                <i class="sel s439 bla"></i>
+                <i class="sel s440 blu"></i>
+                <i class="sel s441 blu"></i>
+                <i class="sel s442 yel"></i>
+                <i class="sel s443 yel"></i>
+                <i class="sel s444 bla"></i>
+                <i class="sel s445 blu"></i>
+                <i class="sel s446 blu"></i>
+                <i class="sel s447 blu"></i>
+                <i class="sel s448 yel"></i>
+                <i class="sel s449 yel"></i>
+                <i class="sel s450 yel"></i>
+                <i class="sel s451 bla"></i>
+                <i class="sel s452 bla"></i>
+                <i class="sel s453 bla"></i>
+                <i class="sel s454 yel"></i>
+                <i class="sel s455 yel"></i>
+                <i class="sel s456 blu"></i>
+                <i class="sel s457 blu"></i>
+                <i class="sel s458 yel"></i>
+                <i class="sel s459 yel"></i>
+                <i class="sel s460 yel"></i>
+                <i class="sel s461 bla"></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i class="sel s466 bla"></i>
+                <i class="sel s467 bla"></i>
+                <i class="sel s468 blu"></i>
+                <i class="sel s469 blu"></i>
+                <i class="sel s470 yel"></i>
+                <i class="sel s471 yel"></i>
+                <i class="sel s472 blu"></i>
+                <i class="sel s473 blu"></i>
+                <i class="sel s474 blu"></i>
+                <i class="sel s475 yel"></i>
+                <i class="sel s476 blu"></i>
+                <i class="sel s477 blu"></i>
+                <i class="sel s478 yel"></i>
+                <i class="sel s479 yel"></i>
+                <i class="sel s480 bla"></i>
+                <i class="sel s481 bla"></i>
+                <i class="sel s482 yel"></i>
+                <i class="sel s483 yel"></i>
+                <i class="sel s484 yel"></i>
+                <i class="sel s485 bla"></i>
+                <i class="sel s486 bla"></i>
+                <i class="sel s487 yel"></i>
+                <i class="sel s488 yel"></i>
+                <i class="sel s489 bla"></i>
+                <i class="sel s490 bla"></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i class="sel s495 bla"></i>
+                <i class="sel s496 blu"></i>
+                <i class="sel s497 blu"></i>
+                <i class="sel s498 yel"></i>
+                <i class="sel s499 yel"></i>
+                <i class="sel s500 blu"></i>
+                <i class="sel s501 blu"></i>
+                <i class="sel s502 yel"></i>
+                <i class="sel s503 yel"></i>
+                <i class="sel s504 yel"></i>
+                <i class="sel s505 yel"></i>
+                <i class="sel s506 yel"></i>
+                <i class="sel s507 yel"></i>
+                <i class="sel s508 yel"></i>
+                <i class="sel s509 yel"></i>
+                <i class="sel s510 yel"></i>
+                <i class="sel s511 yel"></i>
+                <i class="sel s512 yel"></i>
+                <i class="sel s513 yel"></i>
+                <i class="sel s514 yel"></i>
+                <i class="sel s515 yel"></i>
+                <i class="sel s516 yel"></i>
+                <i class="sel s517 bla"></i>
+                <i class="sel s518 bla"></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i class="sel s523 bla"></i>
+                <i class="sel s524 blu"></i>
+                <i class="sel s525 yel"></i>
+                <i class="sel s526 yel"></i>
+                <i class="sel s527 yel"></i>
+                <i class="sel s528 yel"></i>
+                <i class="sel s529 blu"></i>
+                <i class="sel s530 blu"></i>
+                <i class="sel s531 yel"></i>
+                <i class="sel s532 yel"></i>
+                <i class="sel s533 yel"></i>
+                <i class="sel s534 yel"></i>
+                <i class="sel s535 blu"></i>
+                <i class="sel s536 blu"></i>
+                <i class="sel s537 blu"></i>
+                <i class="sel s538 yel"></i>
+                <i class="sel s539 yel"></i>
+                <i class="sel s540 yel"></i>
+                <i class="sel s541 yel"></i>
+                <i class="sel s542 yel"></i>
+                <i class="sel s543 yel"></i>
+                <i class="sel s544 yel"></i>
+                <i class="sel s545 bla"></i>
+                <i class="sel s546 bla"></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i class="sel s552 bla"></i>
+                <i class="sel s553 blu"></i>
+                <i class="sel s554 yel"></i>
+                <i class="sel s555 yel"></i>
+                <i class="sel s556 yel"></i>
+                <i class="sel s557 yel"></i>
+                <i class="sel s558 blu"></i>
+                <i class="sel s559 yel"></i>
+                <i class="sel s560 yel"></i>
+                <i class="sel s561 yel"></i>
+                <i class="sel s562 blu"></i>
+                <i class="sel s563 yel"></i>
+                <i class="sel s564 yel"></i>
+                <i class="sel s565 yel"></i>
+                <i class="sel s566 yel"></i>
+                <i class="sel s567 yel"></i>
+                <i class="sel s568 yel"></i>
+                <i class="sel s569 yel"></i>
+                <i class="sel s570 yel"></i>
+                <i class="sel s571 yel"></i>
+                <i class="sel s572 bla"></i>
+                <i class="sel s573 bla"></i>
+                <i class="sel s574 bla"></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i class="sel s581 bla"></i>
+                <i class="sel s582 blu"></i>
+                <i class="sel s583 blu"></i>
+                <i class="sel s584 yel"></i>
+                <i class="sel s585 yel"></i>
+                <i class="sel s586 yel"></i>
+                <i class="sel s587 blu"></i>
+                <i class="sel s588 yel"></i>
+                <i class="sel s589 yel"></i>
+                <i class="sel s590 yel"></i>
+                <i class="sel s591 blu"></i>
+                <i class="sel s592 yel"></i>
+                <i class="sel s593 blu"></i>
+                <i class="sel s594 yel"></i>
+                <i class="sel s595 yel"></i>
+                <i class="sel s596 yel"></i>
+                <i class="sel s597 yel"></i>
+                <i class="sel s598 yel"></i>
+                <i class="sel s599 yel"></i>
+                <i class="sel s600 blu"></i>
+                <i class="sel s601 blu"></i>
+                <i class="sel s602 bla"></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i class="sel s610 bla"></i>
+                <i class="sel s611 blu"></i>
+                <i class="sel s612 blu"></i>
+                <i class="sel s613 yel"></i>
+                <i class="sel s614 yel"></i>
+                <i class="sel s615 yel"></i>
+                <i class="sel s616 blu"></i>
+                <i class="sel s617 yel"></i>
+                <i class="sel s618 yel"></i>
+                <i class="sel s619 yel"></i>
+                <i class="sel s620 yel"></i>
+                <i class="sel s621 yel"></i>
+                <i class="sel s622 blu"></i>
+                <i class="sel s623 blu"></i>
+                <i class="sel s624 yel"></i>
+                <i class="sel s625 yel"></i>
+                <i class="sel s626 yel"></i>
+                <i class="sel s627 yel"></i>
+                <i class="sel s628 blu"></i>
+                <i class="sel s629 blu"></i>
+                <i class="sel s630 blu"></i>
+                <i class="sel s631 yel"></i>
+                <i class="sel s632 bla"></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i class="sel s638 bla"></i>
+                <i class="sel s639 blu"></i>
+                <i class="sel s640 blu"></i>
+                <i class="sel s641 blu"></i>
+                <i class="sel s642 blu"></i>
+                <i class="sel s643 yel"></i>
+                <i class="sel s644 yel"></i>
+                <i class="sel s645 whi"></i>
+                <i class="sel s646 whi"></i>
+                <i class="sel s647 yel"></i>
+                <i class="sel s648 yel"></i>
+                <i class="sel s649 yel"></i>
+                <i class="sel s650 yel"></i>
+                <i class="sel s651 yel"></i>
+                <i class="sel s652 blu"></i>
+                <i class="sel s653 bla"></i>
+                <i class="sel s654 yel"></i>
+                <i class="sel s655 yel"></i>
+                <i class="sel s656 bla"></i>
+                <i class="sel s657 yel"></i>
+                <i class="sel s658 yel"></i>
+                <i class="sel s659 yel"></i>
+                <i class="sel s660 yel"></i>
+                <i class="sel s661 bla"></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i class="sel s667 bla"></i>
+                <i class="sel s668 blu"></i>
+                <i class="sel s669 blu"></i>
+                <i class="sel s670 yel"></i>
+                <i class="sel s671 yel"></i>
+                <i class="sel s672 yel"></i>
+                <i class="sel s673 yel"></i>
+                <i class="sel s674 whi"></i>
+                <i class="sel s675 whi"></i>
+                <i class="sel s676 whi"></i>
+                <i class="sel s677 yel"></i>
+                <i class="sel s678 yel"></i>
+                <i class="sel s679 yel"></i>
+                <i class="sel s680 yel"></i>
+                <i class="sel s681 yel"></i>
+                <i class="sel s682 bla"></i>
+                <i class="sel s683 yel"></i>
+                <i class="sel s684 yel"></i>
+                <i class="sel s685 bla"></i>
+                <i class="sel s686 whi"></i>
+                <i class="sel s687 whi"></i>
+                <i class="sel s688 whi"></i>
+                <i class="sel s689 whi"></i>
+                <i class="sel s690 yel"></i>
+                <i class="sel s691 bla"></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i class="sel s696 bla"></i>
+                <i class="sel s697 whi"></i>
+                <i class="sel s698 yel"></i>
+                <i class="sel s699 yel"></i>
+                <i class="sel s700 yel"></i>
+                <i class="sel s701 yel"></i>
+                <i class="sel s702 yel"></i>
+                <i class="sel s703 whi"></i>
+                <i class="sel s704 whi"></i>
+                <i class="sel s705 bla"></i>
+                <i class="sel s706 bla"></i>
+                <i class="sel s707 bla"></i>
+                <i class="sel s708 yel"></i>
+                <i class="sel s709 yel"></i>
+                <i class="sel s710 yel"></i>
+                <i class="sel s711 bla"></i>
+                <i class="sel s712 bla"></i>
+                <i class="sel s713 bla"></i>
+                <i class="sel s714 bla"></i>
+                <i class="sel s715 whi"></i>
+                <i class="sel s716 whi"></i>
+                <i class="sel s717 whi"></i>
+                <i class="sel s718 whi"></i>
+                <i class="sel s719 whi"></i>
+                <i class="sel s720 bla"></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i class="sel s725 bla"></i>
+                <i class="sel s726 whi"></i>
+                <i class="sel s727 whi"></i>
+                <i class="sel s728 whi"></i>
+                <i class="sel s729 whi"></i>
+                <i class="sel s730 yel"></i>
+                <i class="sel s731 bla"></i>
+                <i class="sel s732 bla"></i>
+                <i class="sel s733 bla"></i>
+                <i></i>
+                <i></i>
+                <i class="sel s736 bla"></i>
+                <i class="sel s737 whi"></i>
+                <i class="sel s738 whi"></i>
+                <i class="sel s739 whi"></i>
+                <i class="sel s740 whi"></i>
+                <i class="sel s741 bla"></i>
+                <i></i>
+                <i></i>
+                <i class="sel s744 bla"></i>
+                <i class="sel s745 whi"></i>
+                <i class="sel s746 whi"></i>
+                <i class="sel s747 whi"></i>
+                <i class="sel s748 whi"></i>
+                <i class="sel s749 bla"></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i class="sel s754 bla"></i>
+                <i class="sel s755 whi"></i>
+                <i class="sel s756 whi"></i>
+                <i class="sel s757 whi"></i>
+                <i class="sel s758 whi"></i>
+                <i class="sel s759 bla"></i>
+                <i class="sel s760 bla"></i>
+                <i class="sel s761 bla"></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i class="sel s765 bla"></i>
+                <i class="sel s766 bla"></i>
+                <i class="sel s767 whi"></i>
+                <i class="sel s768 whi"></i>
+                <i class="sel s769 whi"></i>
+                <i class="sel s770 whi"></i>
+                <i class="sel s771 bla"></i>
+                <i></i>
+                <i class="sel s773 bla"></i>
+                <i class="sel s774 bla"></i>
+                <i class="sel s775 bla"></i>
+                <i class="sel s776 whi"></i>
+                <i class="sel s777 whi"></i>
+                <i class="sel s778 bla"></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i class="sel s783 bla"></i>
+                <i class="sel s784 whi"></i>
+                <i class="sel s785 whi"></i>
+                <i class="sel s786 whi"></i>
+                <i class="sel s787 bla"></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i class="sel s795 bla"></i>
+                <i class="sel s796 whi"></i>
+                <i class="sel s797 whi"></i>
+                <i class="sel s798 whi"></i>
+                <i class="sel s799 whi"></i>
+                <i class="sel s800 bla"></i>
+                <i></i>
+                <i></i>
+                <i class="sel s803 bla"></i>
+                <i class="sel s804 bla"></i>
+                <i class="sel s805 bla"></i>
+                <i class="sel s806 bla"></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i class="sel s813 bla"></i>
+                <i class="sel s814 bla"></i>
+                <i class="sel s815 bla"></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i class="sel s825 bla"></i>
+                <i class="sel s826 bla"></i>
+                <i class="sel s827 bla"></i>
+                <i class="sel s828 bla"></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+              </div>
+            </div>
           </div>
-        </div>
-      </aside>
-    </main>
-    <footer>
-      <p>2023 by Kostas Šliažas</p>
-    </footer>
-    <a href="#top" id="totop">Back to top</a>
-  </div>
-  <script src="js/gall.min.js" defer></script>
-  <script src="js/script.min.js" defer></script>
-</body>
-
+        </aside>
+      </main>
+      <footer>
+        <p>2023 by Kostas Šliažas</p>
+      </footer>
+      <a href="#top" id="totop">Back to top</a>
+    </div>
+    <script src="js/gall.min.js" defer></script>
+    <script src="js/script.min.js" defer></script>
+  </body>
 </html>

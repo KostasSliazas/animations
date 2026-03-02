@@ -156,7 +156,6 @@ main {
   z-index: 1;
   position: relative;
   min-width: 240px;
-  margin: 0 0 1em 0;
 }
 
 aside .block,
@@ -701,10 +700,11 @@ aside {
   }
   article {
     width: 62.5%;
+    padding:1em 0.5em;
   }
   aside {
-    order: 0;
     width: 37.5%;
+    padding:1em 0.5em;
   }
   aside .block {
     margin-left: 0;

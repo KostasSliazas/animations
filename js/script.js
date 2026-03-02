@@ -1,6 +1,5 @@
 (function (w, d) {
   ('use strict');
-
   function init() {
     function throttle(func, limit) {
       let inThrottle;
@@ -11,6 +10,28 @@
           setTimeout(() => (inThrottle = false), limit);
         }
       };
+    }
+    async function navigateTo(URL) {
+      try {
+        const res = await fetch(URL);
+        const html = await res.text();
+
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, 'text/html');
+
+        document.title = doc.title;
+
+        document.querySelector('article').innerHTML = doc.querySelector('article').innerHTML;
+        document.querySelector('aside').innerHTML = doc.querySelector('aside').innerHTML;
+      } catch (e) {
+        console.error('navigateTo failed:', e);
+      }
+    }
+
+    function sameOrigin(a, b) {
+      const urlA = new URL(a);
+      const urlB = new URL(b);
+      return urlA.origin === urlB.origin;
     }
 
     // Function to add a "Copy" button to specified elements
@@ -58,10 +79,7 @@
       },
 
       click(e) {
-        if (
-          e.target === this.menuElement &&
-          !e.target.classList.contains('act')
-        ) {
+        if (e.target === this.menuElement && !e.target.classList.contains('act')) {
           e.preventDefault();
           e.stopImmediatePropagation();
           this.toggleMenu();
@@ -84,8 +102,7 @@
       },
     };
     const themeSwitch = d.querySelector('#theme');
-    const isThemeSwitched =
-      JSON.parse(w.localStorage.getItem('switchedTheme')) || false;
+    const isThemeSwitched = JSON.parse(w.localStorage.getItem('switchedTheme')) || false;
     themeSwitch.checked = isThemeSwitched;
 
     themeSwitch.addEventListener('focus', (event) => {
@@ -94,10 +111,7 @@
     });
 
     const themeHandler = (e) => {
-      w.localStorage.setItem(
-        'switchedTheme',
-        JSON.stringify(e.currentTarget.checked)
-      );
+      w.localStorage.setItem('switchedTheme', JSON.stringify(e.currentTarget.checked));
 
       e.preventDefault();
       return;
@@ -112,23 +126,25 @@
       } else if (target.classList.contains('state')) {
         target.classList.toggle('animation');
       }
+      if (e.target.tagName === 'A') {
+        if (sameOrigin(e.target.href, window.location)) {
+          e.preventDefault();
+          history.pushState(e.target.href, '', e.target.href);
+          navigateTo(e.target.href);
+        }
+      }
     };
 
     w.addEventListener('keyup', menuHandler.listenForKeys.bind(menuHandler));
-    d.addEventListener(
-      'click',
-      throttle(menuHandler.click.bind(menuHandler), 300)
-    );
+    d.addEventListener('click', throttle(menuHandler.click.bind(menuHandler), 300));
     d.addEventListener('click', handleRootClick);
+    w.addEventListener('popstate', (e) => navigateTo(e.state));
     themeSwitch.addEventListener('change', themeHandler);
-  }
-
-  d.addEventListener('DOMContentLoaded', init);
-  // Wait for the page to load fully
-  w.onload = function () {
     setTimeout(function () {
       // Hide the loader
       d.getElementById('loader').classList.add('hidden');
     }, 250);
-  };
+  }
+
+  d.addEventListener('DOMContentLoaded', init);
 })(window, document);

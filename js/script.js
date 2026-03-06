@@ -126,7 +126,7 @@
       } else if (target.classList.contains('state')) {
         target.classList.toggle('animation');
       }
-      if (e.target.tagName === 'A') {
+      if (e.target.tagName === 'A' && e.target.getAttribute('href')?.charAt(0) !== '#') {
         if (sameOrigin(e.target.href, window.location)) {
           e.preventDefault();
           history.pushState(e.target.href, '', e.target.href);

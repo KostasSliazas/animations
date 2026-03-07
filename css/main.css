@@ -156,6 +156,7 @@ main {
   z-index: 1;
   position: relative;
   min-width: 240px;
+  margin: 0 0 1em;
 }
 
 aside .block,
@@ -309,7 +310,7 @@ a:hover {
   position: relative;
   z-index: 1;
   margin: 1em 0 0;
-  padding: 0 1em;
+  padding: 1em;
 }
 .box p {
   padding: 1em 0;
@@ -336,10 +337,6 @@ aside .box {
 aside .block,
 aside .box {
   min-height: 168px;
-}
-
-:last-child .box {
-  padding-bottom: 1em;
 }
 
 :focus,
@@ -549,7 +546,6 @@ pre {
 
 aside {
   margin: 0 auto;
-  width: 100%;
 }
 
 #totop {
@@ -699,12 +695,10 @@ aside {
     padding: 0;
   }
   article {
-    width: 62.5%;
-    padding:1em 0.5em;
+    width: 55%;
   }
   aside {
-    width: 37.5%;
-    padding:1em 0.5em;
+    width: 45%;
   }
   aside .block {
     margin-left: 0;

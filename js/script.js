@@ -11,18 +11,36 @@
         }
       };
     }
-    async function navigateTo(URL) {
+
+    async function navigateTo(url) {
       try {
-        const res = await fetch(URL);
+        const res = await fetch(url, { headers: { 'X-Requested-With': 'fetch' } });
+
+        // Stop if request failed (404, 500, etc.)
+        if (!res.ok) {
+          console.warn(`Navigation failed: ${res.status}`);
+          return;
+        }
+
         const html = await res.text();
 
         const parser = new DOMParser();
         const doc = parser.parseFromString(html, 'text/html');
 
-        document.title = doc.title;
+        const newArticle = doc.querySelector('article');
+        const newAside = doc.querySelector('aside');
 
-        document.querySelector('article').innerHTML = doc.querySelector('article').innerHTML;
-        document.querySelector('aside').innerHTML = doc.querySelector('aside').innerHTML;
+        // Ensure required content exists before replacing
+        if (!newArticle || !newAside) {
+          console.warn('Expected layout elements missing');
+          return;
+        }
+
+        document.title = doc.title || document.title;
+
+        document.querySelector('article').innerHTML = newArticle.innerHTML;
+        document.querySelector('aside').innerHTML = newAside.innerHTML;
+
       } catch (e) {
         console.error('navigateTo failed:', e);
       }

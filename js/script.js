@@ -145,7 +145,7 @@
         target.classList.toggle('animation');
       }
       if (e.target.tagName === 'A' && e.target.getAttribute('href')?.charAt(0) !== '#') {
-        if (sameOrigin(e.target.href, window.location)) {
+        if (sameOrigin(e.target.href, window.location) && e.target.getAttribute("target") !== "_blank") {
           e.preventDefault();
           history.pushState(e.target.href, '', e.target.href);
           navigateTo(e.target.href);
